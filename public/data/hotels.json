@@ -1,0 +1,2113 @@
+[
+  {
+    "id": "waldorf-maldives",
+    "name": "Waldorf Astoria Maldives Ithaafushi",
+    "group": "Hilton",
+    "brand": "Waldorf Astoria",
+    "city": "Ithaafushi, South Malé Atoll",
+    "country": "Maldives",
+    "region": "Asia-Pacific",
+    "lat": 4.01486,
+    "lng": 73.38376,
+    "url": "https://www.hilton.com/en/hotels/mleonwa-waldorf-astoria-maldives-ithaafushi/",
+    "description": "A three-island retreat with beach, reef and overwater villas, private pools and open-air living spaces. Indian Ocean experiences include snorkeling and diving around the surrounding marine gardens.",
+    "why": "The setting offers several distinct ways to stay beside the water. Terra adds a memorable architectural detail: dining in elevated bamboo nests overlooking the ocean.",
+    "tags": [
+      "island",
+      "beach",
+      "nature",
+      "design"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/mleonwa-waldorf-astoria-maldives-ithaafushi/",
+      "https://mapcarta.com/36466608"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://mapcarta.com/36466608",
+    "coordinatePrecision": "Approximate property location from published mapping feature; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Hilton property page confirms current name, affiliation, destination and description. Coordinates separately sourced; exact entrance is not asserted."
+  },
+  {
+    "id": "marriott-gritti",
+    "name": "The Gritti Palace, a Luxury Collection Hotel, Venice",
+    "group": "Marriott",
+    "brand": "The Luxury Collection",
+    "city": "Venice",
+    "country": "Italy",
+    "region": "Europe",
+    "lat": 45.431637,
+    "lng": 12.33325,
+    "url": "https://www.marriott.com/en-us/hotels/vcegl-the-gritti-palace-a-luxury-collection-hotel-venice/overview/",
+    "description": "A fifteenth-century Venetian palace faces the Grand Canal beside Santa Maria del Giglio. Restored rooms, antiques, canal-facing terraces and a cooking school connect the hotel to the city's artistic traditions.",
+    "why": "Its Gothic palace dates to 1475 and became Doge Andrea Gritti's residence in 1525. The terraces overlook Santa Maria della Salute, placing Venetian architecture at the center of the experience.",
+    "tags": [
+      "city",
+      "historic",
+      "design"
+    ],
+    "sources": [
+      "https://www.marriott.com/en-us/hotels/vcegl-the-gritti-palace-a-luxury-collection-hotel-venice/overview/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=45.4316370%2C12.3332500",
+    "coordinatePrecision": "Official property map pin; not survey precision",
+    "coordinateEvidence": "https://www.marriott.com/en-us/hotels/vcegl-the-gritti-palace-a-luxury-collection-hotel-venice/overview/ (official View Map link: https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=45.4316370%2C12.3332500)"
+  },
+  {
+    "id": "marriott-kyoto",
+    "name": "The Ritz-Carlton, Kyoto",
+    "group": "Marriott",
+    "brand": "The Ritz-Carlton",
+    "city": "Kyoto",
+    "country": "Japan",
+    "region": "Asia-Pacific",
+    "lat": 35.01362,
+    "lng": 135.77087,
+    "url": "https://www.ritzcarlton.com/en/hotels/ukyrz-the-ritz-carlton-kyoto/overview/",
+    "description": "A riverside urban retreat on the Kamogawa combines Japanese design motifs with views toward the Higashiyama Mountains. Restaurants, a spa and cultural activities complement access to Kyoto's historic neighborhoods.",
+    "why": "The riverbank location places Gion and Teramachi within walking distance. Japanese motifs recur throughout the rooms, while activities such as craft workshops offer further connections to Kyoto's living traditions.",
+    "tags": [
+      "city",
+      "design"
+    ],
+    "sources": [
+      "https://www.ritzcarlton.com/en/hotels/ukyrz-the-ritz-carlton-kyoto/overview/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.google.com/maps/search/?api=1&gl=JP&hl=en&query=35.0136200%2C135.7708700",
+    "coordinatePrecision": "Official property map pin; not survey precision",
+    "coordinateEvidence": "https://www.ritzcarlton.com/en/hotels/ukyrz-the-ritz-carlton-kyoto/overview/ (official View Map link: https://www.google.com/maps/search/?api=1&gl=JP&hl=en&query=35.0136200%2C135.7708700)"
+  },
+  {
+    "id": "marriott-mandapa",
+    "name": "Mandapa, a Ritz-Carlton Reserve",
+    "group": "Marriott",
+    "brand": "Ritz-Carlton Reserve",
+    "city": "Ubud, Bali",
+    "country": "Indonesia",
+    "region": "Asia-Pacific",
+    "lat": -8.48588722247867,
+    "lng": 115.24423884852287,
+    "url": "https://www.ritzcarlton.com/en/hotels/dpsub-mandapa-a-ritz-carlton-reserve/overview/",
+    "description": "Suites and private-pool villas follow the Ayung River in Ubud's green interior. Balinese village influences, dining, wellness activities and dedicated butler service organize the experience around nature and local culture.",
+    "why": "The river-and-jungle setting gives the Reserve a strong sense of place. Its village-inspired layout, 35 suites and 25 pool villas create a residential approach to exploring Bali's cultural interior.",
+    "tags": [
+      "nature",
+      "design",
+      "island"
+    ],
+    "sources": [
+      "https://www.ritzcarlton.com/en/hotels/dpsub-mandapa-a-ritz-carlton-reserve/overview/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=-8.48588722247867%2C115.24423884852287",
+    "coordinatePrecision": "Official property map pin; not survey precision",
+    "coordinateEvidence": "https://www.ritzcarlton.com/en/hotels/dpsub-mandapa-a-ritz-carlton-reserve/overview/ (official View Map link: https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=-8.48588722247867%2C115.24423884852287)"
+  },
+  {
+    "id": "conrad-bora-bora",
+    "name": "Conrad Bora Bora Nui",
+    "group": "Hilton",
+    "brand": "Conrad",
+    "city": "Bora Bora",
+    "country": "French Polynesia",
+    "region": "Asia-Pacific",
+    "lat": -16.52889,
+    "lng": -151.76737,
+    "url": "https://www.hilton.com/en/hotels/pptbnci-conrad-bora-bora-nui/",
+    "description": "Overwater villas, hillside suites and beachfront accommodations occupy a private motu in Bora Bora. The resort combines lagoon scenery with Polynesian cultural experiences and its Hina Spa.",
+    "why": "Its varied landscape places hillside gardens beside the lagoon, while excursions to the private islet Motu Tapu extend the experience beyond the main resort.",
+    "tags": [
+      "island",
+      "beach",
+      "nature"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/pptbnci-conrad-bora-bora-nui/",
+      "https://mapcarta.com/32271780"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://mapcarta.com/32271780",
+    "coordinatePrecision": "Approximate property location from published mapping feature; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Hilton property page confirms current name, affiliation, destination and description. Coordinates separately sourced; exact entrance is not asserted."
+  },
+  {
+    "id": "waldorf-pedregal",
+    "name": "Waldorf Astoria Los Cabos Pedregal",
+    "group": "Hilton",
+    "brand": "Waldorf Astoria",
+    "city": "Cabo San Lucas",
+    "country": "Mexico",
+    "region": "Americas",
+    "lat": 22.8747,
+    "lng": -109.9123,
+    "url": "https://www.hilton.com/en/hotels/sjdwawa-waldorf-astoria-los-cabos-pedregal/",
+    "description": "Reached through the private Dos Mares tunnel, this Pacific-facing resort sits against the mountains at Cabo San Lucas. Accommodations include private plunge pools and ocean views.",
+    "why": "The arrival through a mountain tunnel gives the resort an unusually dramatic approach. El Farallon brings ocean-to-table dining into the property’s distinctive rocky coastal setting.",
+    "tags": [
+      "beach",
+      "mountain",
+      "design"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/sjdwawa-waldorf-astoria-los-cabos-pedregal/",
+      "https://impt.io/hotels/mexico/cabo-san-lucas/waldorf-astoria-los-cabos-pedregal/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://impt.io/hotels/mexico/cabo-san-lucas/waldorf-astoria-los-cabos-pedregal/",
+    "coordinatePrecision": "Approximate property location from published mapping feature; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Hilton property page confirms current name, affiliation, destination and description. Coordinates separately sourced; exact entrance is not asserted."
+  },
+  {
+    "id": "rome-cavalieri",
+    "name": "Rome Cavalieri, A Waldorf Astoria Hotel",
+    "group": "Hilton",
+    "brand": "Waldorf Astoria",
+    "city": "Rome",
+    "country": "Italy",
+    "region": "Europe",
+    "lat": 41.919265,
+    "lng": 12.445843,
+    "url": "https://www.hilton.com/en/hotels/romhiwa-rome-cavalieri/",
+    "description": "A hilltop hotel set in 15 acres of Mediterranean park, with balconies looking toward Rome or the grounds. Pools, tennis courts and the Cavalieri Grand Spa Club complete the retreat.",
+    "why": "The elevated position frames Rome and St. Peter’s Dome from above. La Pergola adds a destination dining experience within a parkland setting close to the city.",
+    "tags": [
+      "city",
+      "design",
+      "nature"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/romhiwa-rome-cavalieri/",
+      "https://www.turismoroma.it/it/accoglienza/rome-cavalieri-waldorf-astoria-collection"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.turismoroma.it/it/accoglienza/rome-cavalieri-waldorf-astoria-collection",
+    "coordinatePrecision": "Property coordinates published by Rome tourism authority; entrance precision not independently verified.",
+    "verificationNotes": "Official Hilton property page confirms current name, affiliation, destination and description. Coordinates separately sourced; exact entrance is not asserted."
+  },
+  {
+    "id": "waldorf-amsterdam",
+    "name": "Waldorf Astoria Amsterdam",
+    "group": "Hilton",
+    "brand": "Waldorf Astoria",
+    "city": "Amsterdam",
+    "country": "Netherlands",
+    "region": "Europe",
+    "lat": 52.36472,
+    "lng": 4.89692,
+    "url": "https://www.hilton.com/en/hotels/amswawa-waldorf-astoria-amsterdam/",
+    "description": "Six seventeenth- and eighteenth-century palaces form this canal-side hotel in Amsterdam’s UNESCO-listed center. Rooms overlook the Herengracht or a private garden, and a Guerlain spa provides an indoor retreat.",
+    "why": "Its linked historic palaces make the building itself part of the visit. Canal views, a private garden and a bar inside a former vault reinforce its sense of place.",
+    "tags": [
+      "city",
+      "historic",
+      "design"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/amswawa-waldorf-astoria-amsterdam/",
+      "https://mapcarta.com/30854688"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://mapcarta.com/30854688",
+    "coordinatePrecision": "Approximate property location from published mapping feature; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Hilton property page confirms current name, affiliation, destination and description. Coordinates separately sourced; exact entrance is not asserted."
+  },
+  {
+    "id": "waldorf-versailles",
+    "name": "Waldorf Astoria Versailles - Trianon Palace",
+    "group": "Hilton",
+    "brand": "Waldorf Astoria",
+    "city": "Versailles",
+    "country": "France",
+    "region": "Europe",
+    "lat": 48.8101528,
+    "lng": 2.1199639,
+    "url": "https://www.hilton.com/en/hotels/cdgtpwa-waldorf-astoria-versailles-trianon-palace/",
+    "description": "Beside the royal park, this hotel combines the historic Trianon Palace with the contemporary Pavillon du Trianon. Gardens, French dining and a Guerlain spa shape the stay.",
+    "why": "The architecture and views toward Parc de Versailles connect the hotel to its royal surroundings. Two accommodation buildings offer contrasting historic and modern settings within the same grounds.",
+    "tags": [
+      "historic",
+      "design",
+      "nature"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/cdgtpwa-waldorf-astoria-versailles-trianon-palace/",
+      "https://waldorfastoriaversailles.fr/tresors-de-versailles/map-directions/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://waldorfastoriaversailles.fr/tresors-de-versailles/map-directions/",
+    "coordinatePrecision": "Official hotel GPS coordinates converted from degrees/minutes/seconds; entrance precision not independently verified.",
+    "verificationNotes": "Official Hilton property page confirms current name, affiliation, destination and description. Coordinates separately sourced; exact entrance is not asserted."
+  },
+  {
+    "id": "waldorf-park-city",
+    "name": "Waldorf Astoria Park City",
+    "group": "Hilton",
+    "brand": "Waldorf Astoria",
+    "city": "Park City",
+    "country": "United States",
+    "region": "Americas",
+    "lat": 40.69068,
+    "lng": -111.55012,
+    "url": "https://www.hilton.com/en/hotels/slcdmwa-waldorf-astoria-park-city/",
+    "description": "A Canyons Village mountain retreat with fireplaces in every accommodation, a heated outdoor pool and spa. The surrounding Wasatch Mountains offer hiking, cycling and other seasonal outdoor pursuits.",
+    "why": "Its setting brings mountain trails and the Frostwood Gondola close to the hotel. Suites and residences pair alpine scenery with fireplaces and, in many cases, furnished balconies.",
+    "tags": [
+      "mountain",
+      "nature"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/slcdmwa-waldorf-astoria-park-city/",
+      "https://mapcarta.com/W237879601"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://mapcarta.com/W237879601",
+    "coordinatePrecision": "Approximate property location from published mapping feature; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Hilton property page confirms current name, affiliation, destination and description. Coordinates separately sourced; exact entrance is not asserted."
+  },
+  {
+    "id": "roosevelt-new-orleans",
+    "name": "The Roosevelt New Orleans, A Waldorf Astoria Hotel",
+    "group": "Hilton",
+    "brand": "Waldorf Astoria",
+    "city": "New Orleans",
+    "country": "United States",
+    "region": "Americas",
+    "lat": 29.95394,
+    "lng": -90.07165,
+    "url": "https://www.hilton.com/en/hotels/msyrhwa-the-roosevelt-new-orleans/",
+    "description": "Operating since 1893, this historic New Orleans hotel stands one block from the French Quarter. Warmly decorated rooms, restaurants and a rooftop pool provide a central city base.",
+    "why": "Its long hotel history and proximity to the French Quarter give it a strong local identity. The rooftop pool adds an elevated perspective on the surrounding city.",
+    "tags": [
+      "city",
+      "historic"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/msyrhwa-the-roosevelt-new-orleans/",
+      "https://mapcarta.com/31937666"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://mapcarta.com/31937666",
+    "coordinatePrecision": "Approximate property location from published mapping feature; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Hilton property page confirms current name, affiliation, destination and description. Coordinates separately sourced; exact entrance is not asserted."
+  },
+  {
+    "id": "conrad-tulum",
+    "name": "Conrad Tulum Riviera Maya",
+    "group": "Hilton",
+    "brand": "Conrad",
+    "city": "Tulum",
+    "country": "Mexico",
+    "region": "Americas",
+    "lat": 20.35828,
+    "lng": -87.33757,
+    "url": "https://www.hilton.com/en/hotels/cuncici-conrad-tulum-riviera-maya/",
+    "description": "A secluded bayfront resort where jungle and mangroves meet the Caribbean. Mayan-inspired design, natural materials and private plunge pools connect the accommodations with the surrounding Riviera Maya landscape.",
+    "why": "The sheltered coastal setting combines forest and sea within one property. Its design draws on Mayan influences, while cultural and wellness experiences complement the beach setting.",
+    "tags": [
+      "beach",
+      "design",
+      "nature"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/cuncici-conrad-tulum-riviera-maya/",
+      "https://mapcarta.com/N8931289179"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://mapcarta.com/N8931289179",
+    "coordinatePrecision": "Approximate property location from published mapping feature; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Hilton property page confirms current name, affiliation, destination and description. Coordinates separately sourced; exact entrance is not asserted."
+  },
+  {
+    "id": "hilton-buenos-aires",
+    "name": "Hilton Buenos Aires",
+    "group": "Hilton",
+    "brand": "Hilton Hotels & Resorts",
+    "city": "Buenos Aires",
+    "country": "Argentina",
+    "region": "Americas",
+    "lat": -34.60594,
+    "lng": -58.36367,
+    "url": "https://www.hilton.com/en/hotels/buehihh-hilton-buenos-aires/",
+    "description": "Set in Puerto Madero’s regenerated docks district, this riverside hotel has a rooftop pool and restaurants serving local dishes. San Telmo and Calle Florida are within two kilometers.",
+    "why": "The waterfront neighborhood places contemporary Buenos Aires beside historic districts and a wildlife-rich conservation park. Its rooftop pool offers a useful pause between explorations of the city.",
+    "tags": [
+      "city",
+      "design"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/buehihh-hilton-buenos-aires/",
+      "https://mapcarta.com/W53638705"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://mapcarta.com/W53638705",
+    "coordinatePrecision": "Approximate property location from published mapping feature; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Hilton property page confirms current name, affiliation, destination and description. Coordinates separately sourced; exact entrance is not asserted."
+  },
+  {
+    "id": "waldorf-platte",
+    "name": "Waldorf Astoria Seychelles Platte Island",
+    "group": "Hilton",
+    "brand": "Waldorf Astoria",
+    "city": "Platte Island",
+    "country": "Seychelles",
+    "region": "Africa",
+    "lat": -5.86354,
+    "lng": 55.38327,
+    "url": "https://www.hilton.com/en/hotels/sezpiwa-waldorf-astoria-seychelles-platte-island/",
+    "description": "A secluded Indian Ocean island resort reached by private plane from Mahé. Fifty villas provide private pools, terraces and direct beach access, alongside dining venues and a dedicated spa.",
+    "why": "The small island setting centers the stay on the surrounding ocean. Guided wildlife walks, snorkeling and diving make the landscape an active part of the experience.",
+    "tags": [
+      "island",
+      "beach",
+      "nature"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/sezpiwa-waldorf-astoria-seychelles-platte-island/",
+      "https://mapcarta.com/37785076"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://mapcarta.com/37785076",
+    "coordinatePrecision": "Approximate property location from published mapping feature; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Hilton property page confirms current name, affiliation, destination and description. Coordinates separately sourced; exact entrance is not asserted."
+  },
+  {
+    "id": "hilton-northolme",
+    "name": "Hilton Seychelles Northolme Resort & Spa",
+    "group": "Hilton",
+    "brand": "Hilton Hotels & Resorts",
+    "city": "Glacis, Mahé",
+    "country": "Seychelles",
+    "region": "Africa",
+    "lat": -4.59225,
+    "lng": 55.4317,
+    "url": "https://www.hilton.com/en/hotels/sezhihi-hilton-seychelles-northolme-resort-and-spa/",
+    "description": "Private villas with Indian Ocean balconies sit among tropical gardens on Mahé’s northern coast. The resort offers an infinity pool, kayaking, snorkeling and a spa above the granite shoreline.",
+    "why": "Ocean-facing villas and the granite coast distinguish this intimate Seychelles retreat. A marked snorkeling trail and kayaks encourage close exploration of the water surrounding the property.",
+    "tags": [
+      "island",
+      "beach",
+      "nature"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/sezhihi-hilton-seychelles-northolme-resort-and-spa/",
+      "https://mapcarta.com/25331036"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://mapcarta.com/25331036",
+    "coordinatePrecision": "Approximate property location from published mapping feature; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Hilton property page confirms current name, affiliation, destination and description. Coordinates separately sourced; exact entrance is not asserted."
+  },
+  {
+    "id": "hilton-al-houara",
+    "name": "Hilton Tangier Al Houara Resort & Spa",
+    "group": "Hilton",
+    "brand": "Hilton Hotels & Resorts",
+    "city": "Tangier",
+    "country": "Morocco",
+    "region": "Africa",
+    "lat": 35.66733,
+    "lng": -5.96577,
+    "url": "https://www.hilton.com/en/hotels/tngahhi-hilton-tangier-al-houara-resort-and-spa/",
+    "description": "A coastal resort outside Tangier with beach access, swimming pools, a spa and golf facilities. Dining venues include a restaurant with sea-view arched windows and Mediterranean dishes.",
+    "why": "Its Atlantic setting provides a spacious coastal counterpoint to Tangier’s urban attractions. The golf landscape, pools and beach make the grounds an important part of the stay.",
+    "tags": [
+      "beach",
+      "nature"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/tngahhi-hilton-tangier-al-houara-resort-and-spa/",
+      "https://mapcarta.com/36428420"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://mapcarta.com/36428420",
+    "coordinatePrecision": "Approximate property location from published mapping feature; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Hilton property page confirms current name, affiliation, destination and description. Coordinates separately sourced; exact entrance is not asserted."
+  },
+  {
+    "id": "waldorf-ras-al-khaimah",
+    "name": "Waldorf Astoria Ras Al Khaimah",
+    "group": "Hilton",
+    "brand": "Waldorf Astoria",
+    "city": "Ras Al Khaimah",
+    "country": "United Arab Emirates",
+    "region": "Middle East",
+    "lat": 25.6854,
+    "lng": 55.77267,
+    "url": "https://www.hilton.com/en/hotels/rktwawa-waldorf-astoria-ras-al-khaimah/",
+    "description": "A beachfront resort with spacious rooms and suites overlooking the shoreline or Hajar Mountains. Pools, a spa, watersports and nearby Al Hamra Golf Club support a varied coastal stay.",
+    "why": "The combination of private beach and mountain views gives the resort a distinctive northern Emirates setting. Its architecture, gardens and shoreline also provide several outdoor gathering spaces.",
+    "tags": [
+      "beach",
+      "design"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/rktwawa-waldorf-astoria-ras-al-khaimah/",
+      "https://mapcarta.com/32288702"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://mapcarta.com/32288702",
+    "coordinatePrecision": "Approximate property location from published mapping feature; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Hilton property page confirms current name, affiliation, destination and description. Coordinates separately sourced; exact entrance is not asserted."
+  },
+  {
+    "id": "waldorf-doha-lusail",
+    "name": "Waldorf Astoria Doha Lusail",
+    "group": "Hilton",
+    "brand": "Waldorf Astoria",
+    "city": "Lusail",
+    "country": "Qatar",
+    "region": "Middle East",
+    "lat": 25.40861,
+    "lng": 51.52096,
+    "url": "https://www.hilton.com/en/hotels/dohqtwa-waldorf-astoria-doha-lusail/",
+    "description": "A private-beach resort in Lusail with balcony rooms, suites, sky villas and villas. Pools, a waterpark and ESPA Life spa create several ways to experience the Gulf-facing property.",
+    "why": "The mix of beach resort and city setting distinguishes this Lusail address. Rooftop spaces, coastal views and substantial wellness facilities give the stay a varied sense of scale.",
+    "tags": [
+      "city",
+      "beach",
+      "design"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/dohqtwa-waldorf-astoria-doha-lusail/",
+      "https://mapcarta.com/37337130"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://mapcarta.com/37337130",
+    "coordinatePrecision": "Approximate property location from published mapping feature; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Hilton property page confirms current name, affiliation, destination and description. Coordinates separately sourced; exact entrance is not asserted."
+  },
+  {
+    "id": "conrad-etihad",
+    "name": "Conrad Abu Dhabi Etihad Towers",
+    "group": "Hilton",
+    "brand": "Conrad",
+    "city": "Abu Dhabi",
+    "country": "United Arab Emirates",
+    "region": "Middle East",
+    "lat": 24.45841,
+    "lng": 54.3222,
+    "url": "https://www.hilton.com/en/hotels/auhetci-conrad-abu-dhabi-etihad-towers/",
+    "description": "A modern tower hotel on Abu Dhabi’s West Corniche, with rooms overlooking the city and Gulf. It includes an observation deck, three outdoor pools, a spa and private beach.",
+    "why": "The high-rise viewpoint and beachfront setting provide contrasting perspectives on Abu Dhabi. Its observation deck offers a particularly clear connection between the architecture and the surrounding city.",
+    "tags": [
+      "city",
+      "beach",
+      "design"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/auhetci-conrad-abu-dhabi-etihad-towers/",
+      "https://mapcarta.com/W168401784"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://mapcarta.com/W168401784",
+    "coordinatePrecision": "Approximate property location from published mapping feature; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Hilton property page confirms current name, affiliation, destination and description. Coordinates separately sourced; exact entrance is not asserted."
+  },
+  {
+    "id": "conrad-koh-samui",
+    "name": "Conrad Koh Samui",
+    "group": "Hilton",
+    "brand": "Conrad",
+    "city": "Koh Samui",
+    "country": "Thailand",
+    "region": "Asia-Pacific",
+    "lat": 9.42135,
+    "lng": 99.92878,
+    "url": "https://www.hilton.com/en/hotels/usmksci-conrad-koh-samui/",
+    "description": "Private pool villas occupy a jungle hillside overlooking the Gulf of Thailand and the Five Islands. Terraces, a beach, watersports and a spa frame an ocean-focused island stay.",
+    "why": "The villas face the sunset across the Five Islands, making the outlook central to the experience. Hillside architecture follows the tropical surroundings above the shoreline.",
+    "tags": [
+      "island",
+      "beach",
+      "nature",
+      "design"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/usmksci-conrad-koh-samui/",
+      "https://mapcarta.com/Conrad_Koh_Samui_R18621031"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://mapcarta.com/Conrad_Koh_Samui_R18621031",
+    "coordinatePrecision": "Approximate property location from published mapping feature; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Hilton property page confirms current name, affiliation, destination and description. Coordinates separately sourced; exact entrance is not asserted."
+  },
+  {
+    "id": "roku-kyoto",
+    "name": "ROKU KYOTO, LXR Hotels & Resorts",
+    "group": "Hilton",
+    "brand": "LXR Hotels & Resorts",
+    "city": "Kyoto",
+    "country": "Japan",
+    "region": "Asia-Pacific",
+    "lat": 35.04776,
+    "lng": 135.73462,
+    "url": "https://www.hilton.com/en/hotels/itmolol-roku-kyoto/",
+    "description": "A secluded retreat in Kyoto’s mountain foothills beside the Tenjin River. Japanese-inspired rooms, seasonal dining, a spa and an outdoor thermal pool bring the surrounding landscape into the stay.",
+    "why": "The Takagamine foothills offer a quieter perspective on Kyoto. Craft workshops, tea ceremonies and views through large windows link the property’s contemporary design with local culture and nature.",
+    "tags": [
+      "mountain",
+      "nature",
+      "design"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/itmolol-roku-kyoto/",
+      "https://www.searchspot.ai/places/roku-kyoto-lxr-hotels-resorts"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.searchspot.ai/places/roku-kyoto-lxr-hotels-resorts",
+    "coordinatePrecision": "Approximate property location from published mapping feature; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Hilton property page confirms current name, affiliation, destination and description. Coordinates separately sourced; exact entrance is not asserted."
+  },
+  {
+    "id": "hilton-queenstown",
+    "name": "Hilton Queenstown Resort & Spa",
+    "group": "Hilton",
+    "brand": "Hilton Hotels & Resorts",
+    "city": "Queenstown",
+    "country": "New Zealand",
+    "region": "Asia-Pacific",
+    "lat": -45.02857,
+    "lng": 168.72794,
+    "url": "https://www.hilton.com/en/hotels/zqnhqhi-hilton-queenstown-resort-and-spa/",
+    "description": "A lakeside resort on the Frankton Arm of Lake Wakatipu, with a spa, indoor pool and waterfront dining. A water taxi links the area with central Queenstown across the lake.",
+    "why": "Its shoreline position makes the lake part of both the scenery and the journey into town. Terraces and lakeside dining give the setting a prominent role throughout the stay.",
+    "tags": [
+      "mountain",
+      "nature"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/zqnhqhi-hilton-queenstown-resort-and-spa/",
+      "https://mapcarta.com/32800638"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://mapcarta.com/32800638",
+    "coordinatePrecision": "Approximate property location from published mapping feature; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Hilton property page confirms current name, affiliation, destination and description. Coordinates separately sourced; exact entrance is not asserted."
+  },
+  {
+    "id": "conrad-singapore-marina",
+    "name": "Conrad Singapore Marina Bay",
+    "group": "Hilton",
+    "brand": "Conrad",
+    "city": "Singapore",
+    "country": "Singapore",
+    "region": "Asia-Pacific",
+    "lat": 1.29353,
+    "lng": 103.85878,
+    "url": "https://www.hilton.com/en/hotels/sincici-conrad-singapore-marina-bay/",
+    "description": "A 31-floor hotel near Suntec Convention Centre with views across Singapore and Marina Bay. Restaurants, a spa and an outdoor pool sit near the district’s waterfront cultural attractions.",
+    "why": "A collection of 3,400 Asian contemporary artworks gives the interiors a distinctive cultural focus. The skyline-facing pool and Marina Bay setting bring the city into the experience.",
+    "tags": [
+      "city",
+      "design"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/sincici-conrad-singapore-marina-bay/",
+      "https://mapcarta.com/25295752"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://mapcarta.com/25295752",
+    "coordinatePrecision": "Approximate property location from published mapping feature; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Hilton property page confirms current name, affiliation, destination and description. Coordinates separately sourced; exact entrance is not asserted."
+  },
+  {
+    "id": "marriott-maldives",
+    "name": "The St. Regis Maldives Vommuli Resort",
+    "group": "Marriott",
+    "brand": "St. Regis",
+    "city": "Vommuli Island, Dhaalu Atoll",
+    "country": "Maldives",
+    "region": "Asia-Pacific",
+    "lat": 2.910811,
+    "lng": 72.865534,
+    "url": "https://www.marriott.com/en-us/hotels/mlexr-the-st-regis-maldives-vommuli-resort/overview/",
+    "description": "Private-pool villas occupy the beach and lagoon of Vommuli Island. Tropical vegetation, an overwater spa and opportunities for diving and snorkeling shape this Indian Ocean retreat's relaxed rhythm.",
+    "why": "The island's nature-inspired architecture includes the distinctive Whale Bar and banyan-inspired Vommuli House. Beach and overwater villas combine private outdoor space with a setting surrounded by reefs and ocean.",
+    "tags": [
+      "island",
+      "beach",
+      "design",
+      "nature"
+    ],
+    "sources": [
+      "https://www.marriott.com/en-us/hotels/mlexr-the-st-regis-maldives-vommuli-resort/overview/",
+      "https://www.marriott.com/en-us/hotels/mlexr-the-st-regis-maldives-vommuli-resort/resort-design/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=2.9108110%2C72.8655340",
+    "coordinatePrecision": "Official property map pin; not survey precision",
+    "coordinateEvidence": "https://www.marriott.com/en-us/hotels/mlexr-the-st-regis-maldives-vommuli-resort/overview/ (official View Map link: https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=2.9108110%2C72.8655340)"
+  },
+  {
+    "id": "marriott-almaha",
+    "name": "Al Maha, a Luxury Collection Desert Resort & Spa, Dubai",
+    "group": "Marriott",
+    "brand": "The Luxury Collection",
+    "city": "Dubai Desert Conservation Reserve",
+    "country": "United Arab Emirates",
+    "region": "Middle East",
+    "lat": 24.81517,
+    "lng": 55.66053,
+    "url": "https://www.marriott.com/en-us/hotels/dxbam-al-maha-a-luxury-collection-desert-resort-and-spa-dubai/overview/",
+    "description": "Bedouin-inspired villas sit among dunes within the Dubai Desert Conservation Reserve. Private pools face open desert, while guided activities introduce the area's wildlife, plants and traditional Arabian outdoor pursuits.",
+    "why": "Its setting inside a desert conservation reserve makes wildlife part of the landscape. Oryx and gazelles roam the surroundings, and each of the resort's 42 villas has a private pool.",
+    "tags": [
+      "nature",
+      "design"
+    ],
+    "sources": [
+      "https://www.marriott.com/en-us/hotels/dxbam-al-maha-a-luxury-collection-desert-resort-and-spa-dubai/overview/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=24.81517%2C55.66053",
+    "coordinatePrecision": "Official property map pin; not survey precision",
+    "coordinateEvidence": "https://www.marriott.com/en-us/hotels/dxbam-al-maha-a-luxury-collection-desert-resort-and-spa-dubai/overview/ (official View Map link: https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=24.81517%2C55.66053)"
+  },
+  {
+    "id": "marriott-costarica",
+    "name": "W Costa Rica - Reserva Conchal",
+    "group": "Marriott",
+    "brand": "W Hotels",
+    "city": "Guanacaste",
+    "country": "Costa Rica",
+    "region": "Americas",
+    "lat": 10.395328,
+    "lng": -85.808118,
+    "url": "https://www.marriott.com/en-us/hotels/lirwh-w-costa-rica-reserva-conchal/overview/",
+    "description": "A contemporary coastal resort sits between Playa Conchal and a landscape of tropical forest and mangroves. Playful interiors, balcony rooms and a beach club bring W's visual identity to Guanacaste.",
+    "why": "The rooms incorporate locally inspired patterns, nature-themed details and surfboard bar tops. The surrounding Reserva Conchal landscape and Pacific beach create a distinctive meeting of design and tropical scenery.",
+    "tags": [
+      "beach",
+      "nature",
+      "design"
+    ],
+    "sources": [
+      "https://www.marriott.com/en-us/hotels/lirwh-w-costa-rica-reserva-conchal/overview/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=10.3953280%2C-85.8081180",
+    "coordinatePrecision": "Official property map pin; not survey precision",
+    "coordinateEvidence": "https://www.marriott.com/en-us/hotels/lirwh-w-costa-rica-reserva-conchal/overview/ (official View Map link: https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=10.3953280%2C-85.8081180)"
+  },
+  {
+    "id": "marriott-tambo",
+    "name": "Tambo del Inka, a Luxury Collection Resort & Spa, Valle Sagrado",
+    "group": "Marriott",
+    "brand": "The Luxury Collection",
+    "city": "Urubamba",
+    "country": "Peru",
+    "region": "Americas",
+    "lat": -13.304167,
+    "lng": -72.116667,
+    "url": "https://www.marriott.com/en-us/hotels/cuztl-tambo-del-inka-a-luxury-collection-resort-and-spa-valle-sagrado/overview/",
+    "description": "This Sacred Valley retreat stands beside the Urubamba River beneath the Andes. Gardens, Peruvian cooking and a spa provide a base for exploring the valley's mountain landscapes and cultural heritage.",
+    "why": "Its architecture and identity draw inspiration from the ancient tambos that sheltered travelers. River and mountain scenery, an organic garden and locally focused dining ground the stay in the Sacred Valley.",
+    "tags": [
+      "mountain",
+      "nature",
+      "design"
+    ],
+    "sources": [
+      "https://www.marriott.com/en-us/hotels/cuztl-tambo-del-inka-a-luxury-collection-resort-and-spa-valle-sagrado/overview/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=-13.3041670%2C-72.1166670",
+    "coordinatePrecision": "Official property map pin; not survey precision",
+    "coordinateEvidence": "https://www.marriott.com/en-us/hotels/cuztl-tambo-del-inka-a-luxury-collection-resort-and-spa-valle-sagrado/overview/ (official View Map link: https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=-13.3041670%2C-72.1166670)"
+  },
+  {
+    "id": "marriott-masaimara",
+    "name": "JW Marriott Masai Mara Lodge",
+    "group": "Marriott",
+    "brand": "JW Marriott",
+    "city": "Masai Mara",
+    "country": "Kenya",
+    "region": "Africa",
+    "lat": -1.46312,
+    "lng": 35.26767,
+    "url": "https://www.marriott.com/en-us/hotels/nbomj-jw-marriott-masai-mara-lodge/overview/",
+    "description": "Tented suites overlook the Talek River and the Masai Mara landscape from community land. Private decks, outdoor whirlpool tubs and guided game drives bring the safari setting into daily life.",
+    "why": "The lodge combines canvas-roofed accommodation with views of the river and reserve. A photography studio, bush dining and safari drives offer several ways to engage with the surrounding wildlife landscape.",
+    "tags": [
+      "nature",
+      "design"
+    ],
+    "sources": [
+      "https://www.marriott.com/en-us/hotels/nbomj-jw-marriott-masai-mara-lodge/overview/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=-1.4631200%2C35.2676700",
+    "coordinatePrecision": "Official property map pin; not survey precision",
+    "coordinateEvidence": "https://www.marriott.com/en-us/hotels/nbomj-jw-marriott-masai-mara-lodge/overview/ (official View Map link: https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=-1.4631200%2C35.2676700)"
+  },
+  {
+    "id": "marriott-melrose",
+    "name": "African Pride Melrose Arch, Autograph Collection",
+    "group": "Marriott",
+    "brand": "Autograph Collection",
+    "city": "Johannesburg",
+    "country": "South Africa",
+    "region": "Africa",
+    "lat": -26.13389,
+    "lng": 28.067343,
+    "url": "https://www.marriott.com/en-us/hotels/jnbma-african-pride-melrose-arch-autograph-collection/overview/",
+    "description": "In Johannesburg's Melrose Arch precinct, this urban hotel draws on Southern African materials, craft and cultural motifs. Restaurants, a landscaped pool area and nearby cafés support a city-centered stay.",
+    "why": "Tanzanian wooden doors and a handcrafted sunrise mural establish a strong design identity. The hotel interprets regional heritage through interiors, food and guest experiences within an accessible urban neighborhood.",
+    "tags": [
+      "city",
+      "design"
+    ],
+    "sources": [
+      "https://www.marriott.com/en-us/hotels/jnbma-african-pride-melrose-arch-autograph-collection/overview/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=-26.1338900%2C28.0673430",
+    "coordinatePrecision": "Official property map pin; not survey precision",
+    "coordinateEvidence": "https://www.marriott.com/en-us/hotels/jnbma-african-pride-melrose-arch-autograph-collection/overview/ (official View Map link: https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=-26.1338900%2C28.0673430)"
+  },
+  {
+    "id": "marriott-lemorne",
+    "name": "The St. Regis Le Morne Resort, Mauritius",
+    "group": "Marriott",
+    "brand": "St. Regis",
+    "city": "Le Morne",
+    "country": "Mauritius",
+    "region": "Africa",
+    "lat": -20.461354,
+    "lng": 57.310266,
+    "url": "https://www.marriott.com/en-us/hotels/mruxm-the-st-regis-le-morne-resort-mauritius/overview/",
+    "description": "An all-suite resort occupies a beach beneath Le Morne Brabant. Colonial-inspired buildings, butler service and Indian Ocean views create the atmosphere of a seaside manor on Mauritius's southwestern coast.",
+    "why": "The contrast between the UNESCO-listed mountain and the Indian Ocean gives this resort its distinctive geography. Its suite-only accommodation and manor-inspired architecture reinforce the setting's sense of spaciousness.",
+    "tags": [
+      "island",
+      "beach",
+      "mountain"
+    ],
+    "sources": [
+      "https://www.marriott.com/en-us/hotels/mruxm-the-st-regis-le-morne-resort-mauritius/overview/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=-20.4613540%2C57.3102660",
+    "coordinatePrecision": "Official property map pin; not survey precision",
+    "coordinateEvidence": "https://www.marriott.com/en-us/hotels/mruxm-the-st-regis-le-morne-resort-mauritius/overview/ (official View Map link: https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=-20.4613540%2C57.3102660)"
+  },
+  {
+    "id": "marriott-newyork",
+    "name": "The St. Regis New York",
+    "group": "Marriott",
+    "brand": "St. Regis",
+    "city": "New York",
+    "country": "United States",
+    "region": "Americas",
+    "lat": 40.761302,
+    "lng": -73.974807,
+    "url": "https://www.marriott.com/en-us/hotels/nycxr-the-st-regis-new-york/overview/",
+    "description": "Founded by John Jacob Astor IV, this Fifth Avenue landmark pairs historic public rooms with contemporary suites. Its Midtown position places Central Park, museums and major shopping streets nearby.",
+    "why": "Opened in 1904, it is the original St. Regis hotel and became a New York City landmark in 1988. The King Cole Bar and established butler tradition preserve its identity.",
+    "tags": [
+      "city",
+      "historic",
+      "design"
+    ],
+    "sources": [
+      "https://www.marriott.com/en-us/hotels/nycxr-the-st-regis-new-york/overview/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=40.7613020%2C-73.9748070",
+    "coordinatePrecision": "Official property map pin; not survey precision",
+    "coordinateEvidence": "https://www.marriott.com/en-us/hotels/nycxr-the-st-regis-new-york/overview/ (official View Map link: https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=40.7613020%2C-73.9748070)"
+  },
+  {
+    "id": "marriott-halfmoon",
+    "name": "The Ritz-Carlton, Half Moon Bay",
+    "group": "Marriott",
+    "brand": "The Ritz-Carlton",
+    "city": "Half Moon Bay",
+    "country": "United States",
+    "region": "Americas",
+    "lat": 37.4339295,
+    "lng": -122.4415033,
+    "url": "https://www.ritzcarlton.com/en/hotels/hafrz-the-ritz-carlton-half-moon-bay/overview/",
+    "description": "A coastal resort stands on a bluff above the Pacific south of San Francisco. Ocean-facing dining, terraces with fire pits and two championship golf courses frame the Northern California landscape.",
+    "why": "The bluff-top position provides a dramatic view of the Pacific coastline. Golf courses, coastal produce and regional wine experiences tie the resort's activities closely to its Northern California surroundings.",
+    "tags": [
+      "beach",
+      "nature"
+    ],
+    "sources": [
+      "https://www.ritzcarlton.com/en/hotels/hafrz-the-ritz-carlton-half-moon-bay/overview/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=37.4339295%2C-122.4415033",
+    "coordinatePrecision": "Official property map pin; not survey precision",
+    "coordinateEvidence": "https://www.ritzcarlton.com/en/hotels/hafrz-the-ritz-carlton-half-moon-bay/overview/ (official View Map link: https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=37.4339295%2C-122.4415033)"
+  },
+  {
+    "id": "marriott-zadun",
+    "name": "Zadun Los Cabos, a Ritz-Carlton Reserve",
+    "group": "Marriott",
+    "brand": "Ritz-Carlton Reserve",
+    "city": "San José del Cabo",
+    "country": "Mexico",
+    "region": "Americas",
+    "lat": 23.068597,
+    "lng": -109.646831,
+    "url": "https://www.ritzcarlton.com/en/hotels/sjdzr-zadun-los-cabos-a-ritz-carlton-reserve/overview/",
+    "description": "Set in Puerto Los Cabos, this Reserve occupies the meeting point of desert and the Sea of Cortés. Contemporary accommodation, local artistry and broad coastal views shape the Baja retreat.",
+    "why": "Mexico's first Ritz-Carlton Reserve uses its desert-and-ocean setting as a central feature. Mexican craftsmanship and hacienda-inspired residences add cultural detail to the architecture and sweeping coastal landscape.",
+    "tags": [
+      "beach",
+      "design",
+      "nature"
+    ],
+    "sources": [
+      "https://www.ritzcarlton.com/en/hotels/sjdzr-zadun-los-cabos-a-ritz-carlton-reserve/overview/",
+      "https://www.ritzcarlton.com/en/hotels/sjdzr-zadun-a-ritz-carlton-reserve/rooms/residences/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=23.0685970%2C-109.6468310",
+    "coordinatePrecision": "Official property map pin; not survey precision",
+    "coordinateEvidence": "https://www.ritzcarlton.com/en/hotels/sjdzr-zadun-los-cabos-a-ritz-carlton-reserve/overview/ (official View Map link: https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=23.0685970%2C-109.6468310)"
+  },
+  {
+    "id": "marriott-cusco",
+    "name": "JW Marriott El Convento Cusco",
+    "group": "Marriott",
+    "brand": "JW Marriott",
+    "city": "Cusco",
+    "country": "Peru",
+    "region": "Americas",
+    "lat": -13.516837,
+    "lng": -71.976122,
+    "url": "https://www.marriott.com/en-us/hotels/cuzmc-jw-marriott-el-convento-cusco/overview/",
+    "description": "A restored sixteenth-century convent houses this hotel in Cusco's historic center. Archaeological exhibition rooms, a central courtyard and Peruvian dining connect the accommodation to the city's layered past.",
+    "why": "The property preserves archaeological remains and artifacts associated with earlier cultures, alongside its convent architecture. Two exhibition halls make the building's history an accessible part of the guest experience.",
+    "tags": [
+      "city",
+      "historic",
+      "mountain"
+    ],
+    "sources": [
+      "https://www.marriott.com/en-us/hotels/cuzmc-jw-marriott-el-convento-cusco/overview/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=-13.5168370%2C-71.9761220",
+    "coordinatePrecision": "Official property map pin; not survey precision",
+    "coordinateEvidence": "https://www.marriott.com/en-us/hotels/cuzmc-jw-marriott-el-convento-cusco/overview/ (official View Map link: https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=-13.5168370%2C-71.9761220)"
+  },
+  {
+    "id": "marriott-riscal",
+    "name": "Hotel Marqués de Riscal, a Luxury Collection Hotel, Elciego",
+    "group": "Marriott",
+    "brand": "The Luxury Collection",
+    "city": "Elciego",
+    "country": "Spain",
+    "region": "Europe",
+    "lat": 42.511461,
+    "lng": -2.617841,
+    "url": "https://www.marriott.com/en-us/hotels/biolc-hotel-marques-de-riscal-a-luxury-collection-hotel-elciego/overview/",
+    "description": "Frank Gehry's sculptural hotel rises within the Marqués de Riscal wine estate in Rioja Alavesa. Individually designed rooms, regional cuisine and a grape-inspired spa sit beside a medieval village.",
+    "why": "Gehry's expressive architecture creates a striking contrast with the surrounding vineyards and Elciego's historic streets. Wine-estate experiences and views of the countryside make the location integral to the stay.",
+    "tags": [
+      "design",
+      "nature"
+    ],
+    "sources": [
+      "https://www.marriott.com/en-us/hotels/biolc-hotel-marques-de-riscal-a-luxury-collection-hotel-elciego/overview/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=42.5114610%2C-2.6178410",
+    "coordinatePrecision": "Official property map pin; not survey precision",
+    "coordinateEvidence": "https://www.marriott.com/en-us/hotels/biolc-hotel-marques-de-riscal-a-luxury-collection-hotel-elciego/overview/ (official View Map link: https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=42.5114610%2C-2.6178410)"
+  },
+  {
+    "id": "marriott-barcelona",
+    "name": "W Barcelona",
+    "group": "Marriott",
+    "brand": "W Hotels",
+    "city": "Barcelona",
+    "country": "Spain",
+    "region": "Europe",
+    "lat": 41.369512,
+    "lng": 2.188879,
+    "url": "https://www.marriott.com/en-us/hotels/bcnwh-w-barcelona/overview/",
+    "description": "Ricardo Bofill's sail-shaped tower anchors the waterfront beside Barceloneta. Contemporary rooms, panoramic Mediterranean views, dining and leisure spaces connect a beach setting with the energy of central Barcelona.",
+    "why": "Its recognizable glass silhouette makes the building part of Barcelona's coastal skyline. The beachfront location and wide views across sea and city distinguish it from a conventional urban hotel.",
+    "tags": [
+      "city",
+      "beach",
+      "design"
+    ],
+    "sources": [
+      "https://www.marriott.com/en-us/hotels/bcnwh-w-barcelona/overview/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=41.3695120%2C2.1888790",
+    "coordinatePrecision": "Official property map pin; not survey precision",
+    "coordinateEvidence": "https://www.marriott.com/en-us/hotels/bcnwh-w-barcelona/overview/ (official View Map link: https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=41.3695120%2C2.1888790)"
+  },
+  {
+    "id": "marriott-london",
+    "name": "The London EDITION",
+    "group": "Marriott",
+    "brand": "EDITION",
+    "city": "London",
+    "country": "United Kingdom",
+    "region": "Europe",
+    "lat": 51.516759,
+    "lng": -0.136133,
+    "url": "https://www.marriott.com/en-us/hotels/loneb-the-london-edition/overview/",
+    "description": "Historic architecture on Berners Street meets contemporary interiors at this Fitzrovia hotel. Berners Tavern, the Punch Room and a grand lobby create social spaces near Soho and London's shopping streets.",
+    "why": "Former Georgian townhouses retain ornate ceilings and marble columns, balanced by modern furnishings. The contrast of preserved architectural detail and contemporary design gives the hotel its distinctive London character.",
+    "tags": [
+      "city",
+      "historic",
+      "design"
+    ],
+    "sources": [
+      "https://www.marriott.com/en-us/hotels/loneb-the-london-edition/overview/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=51.5167590%2C-0.1361330",
+    "coordinatePrecision": "Official property map pin; not survey precision",
+    "coordinateEvidence": "https://www.marriott.com/en-us/hotels/loneb-the-london-edition/overview/ (official View Map link: https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=51.5167590%2C-0.1361330)"
+  },
+  {
+    "id": "marriott-abudhabi",
+    "name": "The St. Regis Abu Dhabi",
+    "group": "Marriott",
+    "brand": "St. Regis",
+    "city": "Abu Dhabi",
+    "country": "United Arab Emirates",
+    "region": "Middle East",
+    "lat": 24.463583,
+    "lng": 54.327589,
+    "url": "https://www.marriott.com/en-us/hotels/auhrx-the-st-regis-abu-dhabi/overview/",
+    "description": "Located in Nation Tower on the West Corniche, this city resort combines skyline views with access to Nation Riviera Beach Club. Restaurants and a spa complement its waterfront urban setting.",
+    "why": "A private beach club connects the high-rise hotel to the Arabian Gulf. The Abu Dhabi Suite spans the Nation Towers, adding a striking architectural feature to this Corniche address.",
+    "tags": [
+      "city",
+      "beach",
+      "design"
+    ],
+    "sources": [
+      "https://www.marriott.com/en-us/hotels/auhrx-the-st-regis-abu-dhabi/overview/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=24.4635830%2C54.3275890",
+    "coordinatePrecision": "Official property map pin; not survey precision",
+    "coordinateEvidence": "https://www.marriott.com/en-us/hotels/auhrx-the-st-regis-abu-dhabi/overview/ (official View Map link: https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=24.4635830%2C54.3275890)"
+  },
+  {
+    "id": "marriott-shanghai",
+    "name": "W Shanghai - The Bund",
+    "group": "Marriott",
+    "brand": "W Hotels",
+    "city": "Shanghai",
+    "country": "China",
+    "region": "Asia-Pacific",
+    "lat": 31.2488326834,
+    "lng": 121.4967366225,
+    "url": "https://www.marriott.com/en-us/hotels/shawh-w-shanghai-the-bund/overview/",
+    "description": "On the North Bund, this contemporary hotel looks across the Huangpu toward Shanghai's skyline. Playful rooms, restaurants and indoor and outdoor pools interpret the city's mix of history and modernity.",
+    "why": "Design draws on haipai, Shanghai's blending of Chinese and Western influences, with references to 1920s glamour. The outdoor WET Deck frames a particularly distinctive view of the city's towers.",
+    "tags": [
+      "city",
+      "design"
+    ],
+    "sources": [
+      "https://www.marriott.com/en-us/hotels/shawh-w-shanghai-the-bund/overview/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=31.2488326834%2C121.4967366225",
+    "coordinatePrecision": "Official property map pin; not survey precision",
+    "coordinateEvidence": "https://www.marriott.com/en-us/hotels/shawh-w-shanghai-the-bund/overview/ (official View Map link: https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=31.2488326834%2C121.4967366225)"
+  },
+  {
+    "id": "marriott-tasman",
+    "name": "The Tasman, a Luxury Collection Hotel, Hobart",
+    "group": "Marriott",
+    "brand": "The Luxury Collection",
+    "city": "Hobart",
+    "country": "Australia",
+    "region": "Asia-Pacific",
+    "lat": -42.884769,
+    "lng": 147.329962,
+    "url": "https://www.marriott.com/en-us/hotels/hbalc-the-tasman-a-luxury-collection-hotel-hobart/overview/",
+    "description": "At Parliament Square near Hobart's waterfront, The Tasman connects restored heritage buildings with a contemporary extension. Local materials, Tasmanian produce and proximity to Salamanca Place anchor it in the city.",
+    "why": "Three architectural periods coexist: 1840s Georgian heritage, 1940s Art Deco and a modern pavilion. Restored sandstone, fireplaces and contemporary glass reveal the city's history through the hotel's built fabric.",
+    "tags": [
+      "city",
+      "historic",
+      "design",
+      "island"
+    ],
+    "sources": [
+      "https://www.marriott.com/en-us/hotels/hbalc-the-tasman-a-luxury-collection-hotel-hobart/overview/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=-42.8847690%2C147.3299620",
+    "coordinatePrecision": "Official property map pin; not survey precision",
+    "coordinateEvidence": "https://www.marriott.com/en-us/hotels/hbalc-the-tasman-a-luxury-collection-hotel-hobart/overview/ (official View Map link: https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=-42.8847690%2C147.3299620)"
+  },
+  {
+    "id": "waldorf-beijing",
+    "name": "Waldorf Astoria Beijing",
+    "group": "Hilton",
+    "brand": "Waldorf Astoria",
+    "city": "Beijing",
+    "country": "China",
+    "region": "Asia-Pacific",
+    "lat": 39.91457,
+    "lng": 116.40778,
+    "url": "https://www.hilton.com/en/hotels/bjswawa-waldorf-astoria-beijing/",
+    "description": "A Wangfujing retreat combines contemporary interiors with Chinese architectural references, close to pedestrian shopping and the Forbidden City. Hutong-inspired courtyard accommodation, restaurants, an indoor pool and a spa add quieter spaces within central Beijing.",
+    "why": "The contrast between the modern hotel and its courtyard villas offers two ways to experience Beijing. Ming-inspired details connect the interiors with the surrounding historic neighborhoods.",
+    "tags": [
+      "city",
+      "design",
+      "historic"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/bjswawa-waldorf-astoria-beijing/",
+      "https://mapcarta.com/32568900"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://mapcarta.com/32568900",
+    "coordinatePrecision": "Approximate property location from a separately published mapping or hotel listing; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Hilton property page confirms name, affiliation, destination and descriptive features. Coordinates separately sourced; exact entrance is not asserted. No live rates or availability are claimed."
+  },
+  {
+    "id": "waldorf-shanghai-bund",
+    "name": "Waldorf Astoria Shanghai on the Bund",
+    "group": "Hilton",
+    "brand": "Waldorf Astoria",
+    "city": "Shanghai",
+    "country": "China",
+    "region": "Asia-Pacific",
+    "lat": 31.2335669019,
+    "lng": 121.49003026984,
+    "url": "https://www.hilton.com/en/hotels/shawawa-waldorf-astoria-shanghai-on-the-bund/",
+    "description": "The former Shanghai Club forms the heritage heart of this Bund hotel beside the Huangpu River. Restored architectural detail meets contemporary rooms, restaurants and a spa, with the waterfront promenade nearby.",
+    "why": "Its restored 1911 Heritage Building preserves a distinctive piece of Shanghai history. River views and access to the Bund make the city itself central to the stay.",
+    "tags": [
+      "city",
+      "historic",
+      "design"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/shawawa-waldorf-astoria-shanghai-on-the-bund/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.hilton.com/en/hotels/shawawa-waldorf-astoria-shanghai-on-the-bund/",
+    "coordinatePrecision": "Official property Google Maps link center; not survey or entrance precision.",
+    "verificationNotes": "Official Hilton property page confirms name, affiliation and descriptive features; coordinates taken from its address map link.",
+    "coordinateEvidence": "Official property address link points to https://www.google.com/maps/place/Waldorf+Astoria+Shanghai+on+the+Bund/@31.2335669019,121.49003026984,17z/"
+  },
+  {
+    "id": "conrad-guangzhou",
+    "name": "Conrad Guangzhou",
+    "group": "Hilton",
+    "brand": "Conrad",
+    "city": "Guangzhou",
+    "country": "China",
+    "region": "Asia-Pacific",
+    "lat": 23.115848,
+    "lng": 113.33278,
+    "url": "https://www.hilton.com/en/hotels/canxwci-conrad-guangzhou/",
+    "description": "In Zhujiang New Town, this city hotel looks toward the Pearl River and Canton Tower. Interiors interpret local Xiguan culture, while restaurants, a rooftop terrace bar and a spa complement the urban setting.",
+    "why": "Architectural references to Guangzhou culture give the contemporary interiors a local connection. River-facing rooms and the outdoor bar frame the city skyline from different perspectives.",
+    "tags": [
+      "city",
+      "design"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/canxwci-conrad-guangzhou/",
+      "https://luxeadviser.com/hotels/conrad-guangzhou"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://luxeadviser.com/hotels/conrad-guangzhou",
+    "coordinatePrecision": "Approximate property location from a separately published mapping or hotel listing; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Hilton property page confirms name, affiliation, destination and descriptive features. Coordinates separately sourced; exact entrance is not asserted. No live rates or availability are claimed."
+  },
+  {
+    "id": "conrad-shenzhen",
+    "name": "Conrad Shenzhen",
+    "group": "Hilton",
+    "brand": "Conrad",
+    "city": "Shenzhen",
+    "country": "China",
+    "region": "Asia-Pacific",
+    "lat": 22.5309,
+    "lng": 113.89201,
+    "url": "https://www.hilton.com/en/hotels/szxcici-conrad-shenzhen/",
+    "description": "A contemporary hotel in the Qianhai business district offers bay views from spacious rooms and a rooftop bar. Restaurants, an indoor heated pool and nearby shopping and metro links support a city stay.",
+    "why": "The bay-facing terrace and floor-to-ceiling windows turn the changing waterfront into part of the experience. Its Qianhai location explores a newer side of Shenzhen.",
+    "tags": [
+      "city",
+      "design"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/szxcici-conrad-shenzhen/",
+      "https://mapcarta.com/W1343656771"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://mapcarta.com/W1343656771",
+    "coordinatePrecision": "Approximate property location from a separately published mapping or hotel listing; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Hilton property page confirms name, affiliation, destination and descriptive features. Coordinates separately sourced; exact entrance is not asserted. No live rates or availability are claimed."
+  },
+  {
+    "id": "conrad-tokyo",
+    "name": "Conrad Tokyo",
+    "group": "Hilton",
+    "brand": "Conrad",
+    "city": "Tokyo",
+    "country": "Japan",
+    "region": "Asia-Pacific",
+    "lat": 35.66304,
+    "lng": 139.76141,
+    "url": "https://www.hilton.com/en/hotels/tyocici-conrad-tokyo/",
+    "description": "High above Shiodome, Japanese-inspired rooms look across Tokyo Bay and Hamarikyu Gardens. The hotel combines several dining venues and a full-service spa with rail connections to the wider city.",
+    "why": "The juxtaposition of historic gardens, waterways and skyscrapers provides a memorable Tokyo panorama. Its elevated restaurants and lounge carry those views through the day.",
+    "tags": [
+      "city",
+      "design"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/tyocici-conrad-tokyo/",
+      "https://mapcarta.com/25340910"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://mapcarta.com/25340910",
+    "coordinatePrecision": "Approximate property location from a separately published mapping or hotel listing; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Hilton property page confirms name, affiliation, destination and descriptive features. Coordinates separately sourced; exact entrance is not asserted. No live rates or availability are claimed."
+  },
+  {
+    "id": "conrad-osaka",
+    "name": "Conrad Osaka",
+    "group": "Hilton",
+    "brand": "Conrad",
+    "city": "Osaka",
+    "country": "Japan",
+    "region": "Asia-Pacific",
+    "lat": 34.69359,
+    "lng": 135.49547,
+    "url": "https://www.hilton.com/en/hotels/osacici-conrad-osaka/",
+    "description": "Occupying the upper floors of Nakanoshima Festival West Tower, Conrad Osaka overlooks the city and its rivers. Floor-to-ceiling windows, sky-high dining and a spa are paired with direct underground rail connections.",
+    "why": "Fortieth-floor restaurants and public spaces make the skyline a defining feature. The Festival Hall connection also places the hotel beside one of Osaka's cultural landmarks.",
+    "tags": [
+      "city",
+      "design"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/osacici-conrad-osaka/",
+      "https://mapcarta.com/35446676"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://mapcarta.com/35446676",
+    "coordinatePrecision": "Approximate property location from a separately published mapping or hotel listing; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Hilton property page confirms name, affiliation, destination and descriptive features. Coordinates separately sourced; exact entrance is not asserted. No live rates or availability are claimed."
+  },
+  {
+    "id": "conrad-hong-kong",
+    "name": "Conrad Hong Kong",
+    "group": "Hilton",
+    "brand": "Conrad",
+    "city": "Hong Kong",
+    "country": "China",
+    "region": "Asia-Pacific",
+    "lat": 22.27681,
+    "lng": 114.16527,
+    "url": "https://www.hilton.com/en/hotels/hkghcci-conrad-hong-kong/",
+    "description": "Above Pacific Place in Admiralty, this hotel offers views toward Victoria Harbour and the green mountainside. Direct MTR connections, Cantonese and French dining, and wellness facilities provide a central Hong Kong base.",
+    "why": "Its elevated position captures both the dense skyline and the island's greener slopes. The Pacific Place setting connects hotel life directly with shopping and the city's rail network.",
+    "tags": [
+      "city",
+      "design"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/hkghcci-conrad-hong-kong/",
+      "https://mapcarta.com/25345856"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://mapcarta.com/25345856",
+    "coordinatePrecision": "Approximate property location from a separately published mapping or hotel listing; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Hilton property page confirms name, affiliation, destination and descriptive features. Coordinates separately sourced; exact entrance is not asserted. No live rates or availability are claimed."
+  },
+  {
+    "id": "conrad-seoul",
+    "name": "Conrad Seoul",
+    "group": "Hilton",
+    "brand": "Conrad",
+    "city": "Seoul",
+    "country": "South Korea",
+    "region": "Asia-Pacific",
+    "lat": 37.52537,
+    "lng": 126.92663,
+    "url": "https://www.hilton.com/en/hotels/selcici-conrad-seoul/",
+    "description": "Beside Yeouido Park, this high-rise hotel looks toward the Han River and Seoul skyline. The IFC Mall connection, restaurants, indoor pool and spa make it a convenient base in the island business district.",
+    "why": "River and park views offer a different perspective on Seoul from the older central districts. Its connected shopping and transport network makes exploring beyond Yeouido straightforward.",
+    "tags": [
+      "city",
+      "design"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/selcici-conrad-seoul/",
+      "https://mapcarta.com/32578350"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://mapcarta.com/32578350",
+    "coordinatePrecision": "Approximate property location from a separately published mapping or hotel listing; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Hilton property page confirms name, affiliation, destination and descriptive features. Coordinates separately sourced; exact entrance is not asserted. No live rates or availability are claimed."
+  },
+  {
+    "id": "conrad-bali",
+    "name": "Conrad Bali",
+    "group": "Hilton",
+    "brand": "Conrad",
+    "city": "Tanjung Benoa, Bali",
+    "country": "Indonesia",
+    "region": "Asia-Pacific",
+    "lat": -8.78054,
+    "lng": 115.22544,
+    "url": "https://www.hilton.com/en/hotels/bpncici-conrad-bali/",
+    "description": "On the Nusa Dua coast, rooms, suites and villas sit among gardens and winding pools beside the beach. Balinese influences, wellness experiences and dining connect this seaside resort with its island surroundings.",
+    "why": "The lagoon-style pools and beachfront setting create varied places to relax. Private-pool villas and a separate suite wing offer alternative ways to experience the resort.",
+    "tags": [
+      "beach",
+      "island",
+      "design"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/bpncici-conrad-bali/",
+      "https://mapcarta.com/25347544"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://mapcarta.com/25347544",
+    "coordinatePrecision": "Approximate property location from a separately published mapping or hotel listing; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Hilton property page confirms name, affiliation, destination and descriptive features. Coordinates separately sourced; exact entrance is not asserted. No live rates or availability are claimed."
+  },
+  {
+    "id": "conrad-bangkok",
+    "name": "Conrad Bangkok",
+    "group": "Hilton",
+    "brand": "Conrad",
+    "city": "Bangkok",
+    "country": "Thailand",
+    "region": "Asia-Pacific",
+    "lat": 13.73865,
+    "lng": 100.54839,
+    "url": "https://www.hilton.com/en/hotels/bkkcici-conrad-bangkok/",
+    "description": "At All Seasons Place, this central Bangkok hotel combines skyline-view rooms with a garden-framed outdoor pool. Dining venues and a wellness center offer respite between visits to the city's shopping streets and parks.",
+    "why": "The tropical pool terrace brings a resort-like pause to an urban address. A shuttle links the hotel to Phloen Chit BTS for trips across central Bangkok.",
+    "tags": [
+      "city",
+      "design"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/bkkcici-conrad-bangkok/",
+      "https://mapcarta.com/25352482"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://mapcarta.com/25352482",
+    "coordinatePrecision": "Approximate property location from a separately published mapping or hotel listing; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Hilton property page confirms name, affiliation, destination and descriptive features. Coordinates separately sourced; exact entrance is not asserted. No live rates or availability are claimed."
+  },
+  {
+    "id": "conrad-manila",
+    "name": "Conrad Manila",
+    "group": "Hilton",
+    "brand": "Conrad",
+    "city": "Pasay, Metro Manila",
+    "country": "Philippines",
+    "region": "Asia-Pacific",
+    "lat": 14.53193,
+    "lng": 120.98049,
+    "url": "https://www.hilton.com/en/hotels/mnlmbci-conrad-manila/",
+    "description": "Overlooking Manila Bay within the Mall of Asia complex, this contemporary hotel places dining, shopping and entertainment close together. Rooms and restaurants take advantage of the waterfront setting and changing sunset light.",
+    "why": "The bay-facing location gives an urban stay a broad horizon. It is a useful base for combining the waterfront promenade with the surrounding entertainment district.",
+    "tags": [
+      "city",
+      "design"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/mnlmbci-conrad-manila/",
+      "https://mapcarta.com/35442976"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://mapcarta.com/35442976",
+    "coordinatePrecision": "Approximate property location from a separately published mapping or hotel listing; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Hilton property page confirms name, affiliation, destination and descriptive features. Coordinates separately sourced; exact entrance is not asserted. No live rates or availability are claimed."
+  },
+  {
+    "id": "hilton-sydney",
+    "name": "Hilton Sydney",
+    "group": "Hilton",
+    "brand": "Hilton Hotels & Resorts",
+    "city": "Sydney",
+    "country": "Australia",
+    "region": "Asia-Pacific",
+    "lat": -33.87182,
+    "lng": 151.20761,
+    "url": "https://www.hilton.com/en/hotels/sydhitw-hilton-sydney/",
+    "description": "A George Street address places this hotel beside the Queen Victoria Building and close to Sydney Tower. Contemporary rooms with city views sit above a dining precinct that includes a heritage bar and rooftop terrace.",
+    "why": "The contrast between modern accommodation and the historic Marble Bar adds character to a central city base. Sydney's shopping streets and major sights are within easy reach.",
+    "tags": [
+      "city",
+      "historic",
+      "design"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/sydhitw-hilton-sydney/",
+      "https://mapcarta.com/25315988"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://mapcarta.com/25315988",
+    "coordinatePrecision": "Approximate property location from a separately published mapping or hotel listing; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Hilton property page confirms name, affiliation, destination and descriptive features. Coordinates separately sourced; exact entrance is not asserted. No live rates or availability are claimed."
+  },
+  {
+    "id": "hilton-auckland",
+    "name": "Hilton Auckland",
+    "group": "Hilton",
+    "brand": "Hilton Hotels & Resorts",
+    "city": "Auckland",
+    "country": "New Zealand",
+    "region": "Asia-Pacific",
+    "lat": -36.8398,
+    "lng": 174.76584,
+    "url": "https://www.hilton.com/en/hotels/aklhihi-hilton-auckland/",
+    "description": "At the end of Princes Wharf, this nautically inspired hotel opens onto Auckland's harbor. Rooms with panoramic views, waterfront dining and an outdoor lap pool place the sea at the center of the experience.",
+    "why": "The projecting wharf location feels distinct from a conventional downtown tower. An underwater viewing window in the lap pool adds an unusual detail to the maritime setting.",
+    "tags": [
+      "city",
+      "design"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/aklhihi-hilton-auckland/",
+      "https://mapcarta.com/25273188"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://mapcarta.com/25273188",
+    "coordinatePrecision": "Approximate property location from a separately published mapping or hotel listing; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Hilton property page confirms name, affiliation, destination and descriptive features. Coordinates separately sourced; exact entrance is not asserted. No live rates or availability are claimed."
+  },
+  {
+    "id": "waldorf-berlin",
+    "name": "Waldorf Astoria Berlin",
+    "group": "Hilton",
+    "brand": "Waldorf Astoria",
+    "city": "Berlin",
+    "country": "Germany",
+    "region": "Europe",
+    "lat": 52.50558,
+    "lng": 13.33291,
+    "url": "https://www.hilton.com/en/hotels/berwawa-waldorf-astoria-berlin/",
+    "description": "In Berlin's City West, Art Deco-inspired interiors meet contemporary rooms and suites with skyline views. A spa, swimming pool and dining venues provide a city retreat close to the district's shops and landmarks.",
+    "why": "Tower suites and the elevated Library Lounge offer different views over Berlin. Art Deco references give the interiors a consistent architectural identity.",
+    "tags": [
+      "city",
+      "design"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/berwawa-waldorf-astoria-berlin/",
+      "https://mapcarta.com/30705580"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://mapcarta.com/30705580",
+    "coordinatePrecision": "Approximate property location from a separately published mapping or hotel listing; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Hilton property page confirms name, affiliation, destination and descriptive features. Coordinates separately sourced; exact entrance is not asserted. No live rates or availability are claimed."
+  },
+  {
+    "id": "canopy-reykjavik",
+    "name": "Canopy by Hilton Reykjavik City Centre",
+    "group": "Hilton",
+    "brand": "Canopy by Hilton",
+    "city": "Reykjavik",
+    "country": "Iceland",
+    "region": "Europe",
+    "lat": 64.14635,
+    "lng": -21.93037,
+    "url": "https://www.hilton.com/en/hotels/rekcapy-canopy-reykjavik-city-centre/",
+    "description": "A central Reykjavik hotel reinterprets buildings with a past as a furniture factory, music venue and arts hub. Contemporary interiors, a vinyl collection and nearby cafes connect the stay with the city's creative life.",
+    "why": "The site's layered uses inform its character, while a flowing art installation leads toward the rooftop platform. Hallgrimskirkja and Harpa are nearby starting points for exploring.",
+    "tags": [
+      "city",
+      "design",
+      "historic"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/rekcapy-canopy-reykjavik-city-centre/",
+      "https://mapcarta.com/35443666"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://mapcarta.com/35443666",
+    "coordinatePrecision": "Approximate property location from a separately published mapping or hotel listing; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Hilton property page confirms name, affiliation, destination and descriptive features. Coordinates separately sourced; exact entrance is not asserted. No live rates or availability are claimed."
+  },
+  {
+    "id": "caledonian-edinburgh",
+    "name": "The Caledonian Edinburgh, Curio Collection by Hilton",
+    "group": "Hilton",
+    "brand": "Curio Collection by Hilton",
+    "city": "Edinburgh",
+    "country": "United Kingdom",
+    "region": "Europe",
+    "lat": 55.94956,
+    "lng": -3.20748,
+    "url": "https://www.hilton.com/en/hotels/ednchqq-the-caledonian-edinburgh/",
+    "description": "This historic Princes Street hotel looks toward Edinburgh Castle and the gardens below it. Heritage rooms, a spa and Scottish dining experiences place a long-established city landmark within reach of the Old Town.",
+    "why": "Original stained-glass windows inspire details in the rooms. The combination of castle views and a century of hotel history gives the address a strong Edinburgh identity.",
+    "tags": [
+      "city",
+      "historic",
+      "design"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/ednchqq-the-caledonian-edinburgh/",
+      "https://mapcarta.com/25280398"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://mapcarta.com/25280398",
+    "coordinatePrecision": "Approximate property location from a separately published mapping or hotel listing; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Hilton property page confirms name, affiliation, destination and descriptive features. Coordinates separately sourced; exact entrance is not asserted. No live rates or availability are claimed."
+  },
+  {
+    "id": "conrad-istanbul",
+    "name": "Conrad Istanbul Bosphorus",
+    "group": "Hilton",
+    "brand": "Conrad",
+    "city": "Istanbul",
+    "country": "Türkiye",
+    "region": "Europe",
+    "lat": 41.04714,
+    "lng": 29.0095,
+    "url": "https://www.hilton.com/en/hotels/isthcci-conrad-istanbul-bosphorus/",
+    "description": "Above Besiktas, this hotel combines Turkish design references with views across Istanbul and the Bosphorus. Indoor and outdoor pools, a spa, a tennis club and dining terraces add space to unwind in the city.",
+    "why": "The elevated setting frames the waterway that defines Istanbul. A rooftop terrace and rooms facing the Bosphorus make the changing city panorama part of the stay.",
+    "tags": [
+      "city",
+      "design"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/isthcci-conrad-istanbul-bosphorus/",
+      "https://mapcarta.com/32263214"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://mapcarta.com/32263214",
+    "coordinatePrecision": "Approximate property location from a separately published mapping or hotel listing; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Hilton property page confirms name, affiliation, destination and descriptive features. Coordinates separately sourced; exact entrance is not asserted. No live rates or availability are claimed."
+  },
+  {
+    "id": "grand-wailea",
+    "name": "Grand Wailea, A Waldorf Astoria Resort",
+    "group": "Hilton",
+    "brand": "Waldorf Astoria",
+    "city": "Wailea, Maui",
+    "country": "United States",
+    "region": "Americas",
+    "lat": 20.6831,
+    "lng": -156.44119,
+    "url": "https://www.hilton.com/en/hotels/jhmgwwa-grand-wailea/",
+    "description": "Fronting Wailea Beach, this Maui resort spreads through tropical grounds with pools, dining and a spa. Hawaiian motifs appear in the accommodation, while cultural activities and ocean experiences connect guests with the island.",
+    "why": "Art, landscaped grounds and the beachfront position create a varied resort environment. Outrigger canoe trips and cultural programming extend the experience beyond the room.",
+    "tags": [
+      "beach",
+      "island",
+      "nature",
+      "design"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/jhmgwwa-grand-wailea/",
+      "https://mapcarta.com/W449921403"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://mapcarta.com/W449921403",
+    "coordinatePrecision": "Approximate property location from a separately published mapping or hotel listing; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Hilton property page confirms name, affiliation, destination and descriptive features. Coordinates separately sourced; exact entrance is not asserted. No live rates or availability are claimed."
+  },
+  {
+    "id": "waldorf-chicago",
+    "name": "Waldorf Astoria Chicago",
+    "group": "Hilton",
+    "brand": "Waldorf Astoria",
+    "city": "Chicago",
+    "country": "United States",
+    "region": "Americas",
+    "lat": 41.899689,
+    "lng": -87.627754,
+    "url": "https://www.hilton.com/en/hotels/chiwawa-waldorf-astoria-chicago/",
+    "description": "In the Gold Coast neighborhood, Parisian-inspired interiors accompany contemporary rooms and suites. Some suites have fireplaces or private terraces, while a spa, lap pool and dining venues support a central Chicago stay.",
+    "why": "Its location brings Rush Street and the Magnificent Mile close by. Residential details such as fireplaces and terraces distinguish selected suites from a standard city room.",
+    "tags": [
+      "city",
+      "design"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/chiwawa-waldorf-astoria-chicago/",
+      "https://www.sleep-travel.com/us/city/chicago/hotel/waldorf-astoria-chicago/01363318"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.sleep-travel.com/us/city/chicago/hotel/waldorf-astoria-chicago/01363318",
+    "coordinatePrecision": "Approximate property location from a separately published mapping or hotel listing; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Hilton property page confirms name, affiliation, destination and descriptive features. Coordinates separately sourced; exact entrance is not asserted. No live rates or availability are claimed."
+  },
+  {
+    "id": "waldorf-beverly-hills",
+    "name": "Waldorf Astoria Beverly Hills",
+    "group": "Hilton",
+    "brand": "Waldorf Astoria",
+    "city": "Beverly Hills",
+    "country": "United States",
+    "region": "Americas",
+    "lat": 34.066878,
+    "lng": -118.41113,
+    "url": "https://www.hilton.com/en/hotels/laxwawa-waldorf-astoria-beverly-hills/",
+    "description": "Terrace-equipped rooms and suites frame Beverly Hills and the Santa Monica Mountains. A rooftop pool, dining venues and La Prairie Spa create a Southern California retreat near the city's shopping and cultural attractions.",
+    "why": "The rooftop brings wide views over the city, while generous terraces make outdoor space part of the accommodation. The mountain backdrop adds depth to the urban setting.",
+    "tags": [
+      "city",
+      "design"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/laxwawa-waldorf-astoria-beverly-hills/",
+      "https://www.scrapehero.com/location-reports/Waldorf%20Astoria-USA/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.scrapehero.com/location-reports/Waldorf%20Astoria-USA/",
+    "coordinatePrecision": "Approximate property location from a separately published mapping or hotel listing; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Hilton property page confirms name, affiliation, destination and descriptive features. Coordinates separately sourced; exact entrance is not asserted. No live rates or availability are claimed."
+  },
+  {
+    "id": "marriott-edition-shanghai",
+    "name": "The Shanghai EDITION",
+    "group": "Marriott",
+    "brand": "EDITION",
+    "city": "Shanghai",
+    "country": "China",
+    "region": "Asia-Pacific",
+    "lat": 31.237886,
+    "lng": 121.485916,
+    "url": "https://www.marriott.com/en-us/hotels/shaeb-the-shanghai-edition/overview/",
+    "description": "Two landmark buildings near the Bund pair Art Deco heritage with contemporary interiors. Guest rooms face the city, while rooftop lounges look across the Huangpu River toward Pudong.",
+    "why": "The former Shanghai Power Company building and the modern skyline give this urban stay a distinctive architectural contrast.",
+    "tags": [
+      "city",
+      "design",
+      "historic"
+    ],
+    "sources": [
+      "https://www.marriott.com/en-us/hotels/shaeb-the-shanghai-edition/overview/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=31.237886%2C121.485916",
+    "coordinatePrecision": "Official property map pin; not survey or entrance-level precision. Published coordinates are preserved without independent datum or entrance verification.",
+    "coordinateEvidence": "https://www.marriott.com/en-us/hotels/shaeb-the-shanghai-edition/overview/ (official View Map link: https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=31.237886%2C121.485916)",
+    "verificationNotes": "Name, affiliation, destination and descriptive features checked against the official property page. Coordinates taken from its published View Map link; no room availability or pricing claim."
+  },
+  {
+    "id": "marriott-st-regis-hong-kong",
+    "name": "The St. Regis Hong Kong",
+    "group": "Marriott",
+    "brand": "St. Regis",
+    "city": "Hong Kong",
+    "country": "China",
+    "region": "Asia-Pacific",
+    "lat": 22.2798647,
+    "lng": 114.1748977,
+    "url": "https://www.marriott.com/en-us/hotels/hkgxr-the-st-regis-hong-kong/overview/",
+    "description": "An André Fu-designed hotel in Wan Chai combines residential interiors with Chinese and Western influences. Dining venues, a drawing room, outdoor pool and spa anchor the stay on Hong Kong Island.",
+    "why": "Its mansion-inspired spaces offer a quieter setting close to Victoria Harbour and the convention district.",
+    "tags": [
+      "city",
+      "design"
+    ],
+    "sources": [
+      "https://www.marriott.com/en-us/hotels/hkgxr-the-st-regis-hong-kong/overview/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=22.2798647%2C114.1748977",
+    "coordinatePrecision": "Official property map pin; not survey or entrance-level precision. Published coordinates are preserved without independent datum or entrance verification.",
+    "coordinateEvidence": "https://www.marriott.com/en-us/hotels/hkgxr-the-st-regis-hong-kong/overview/ (official View Map link: https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=22.2798647%2C114.1748977)",
+    "verificationNotes": "Name, affiliation, destination and descriptive features checked against the official property page. Coordinates taken from its published View Map link; no room availability or pricing claim."
+  },
+  {
+    "id": "marriott-ritz-nanjing",
+    "name": "The Ritz-Carlton, Nanjing",
+    "group": "Marriott",
+    "brand": "The Ritz-Carlton",
+    "city": "Nanjing",
+    "country": "China",
+    "region": "Asia-Pacific",
+    "lat": 32.042683,
+    "lng": 118.78415,
+    "url": "https://www.ritzcarlton.com/en/hotels/nkgrz-the-ritz-carlton-nanjing/overview/",
+    "description": "A high-rise hotel in central Nanjing draws on the city’s dynastic history through art and contemporary interiors. Rooms frame the skyline, Xuanwu Lake or Purple Mountain, with several dining venues above the city.",
+    "why": "The rooftop FLAIR bar on the 62nd floor makes the city’s scale part of the experience.",
+    "tags": [
+      "city",
+      "design"
+    ],
+    "sources": [
+      "https://www.ritzcarlton.com/en/hotels/nkgrz-the-ritz-carlton-nanjing/overview/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=32.042683%2C118.78415",
+    "coordinatePrecision": "Official property map pin; not survey or entrance-level precision. Published coordinates are preserved without independent datum or entrance verification.",
+    "coordinateEvidence": "https://www.ritzcarlton.com/en/hotels/nkgrz-the-ritz-carlton-nanjing/overview/ (official View Map link: https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=32.042683%2C118.78415)",
+    "verificationNotes": "Name, affiliation, destination and descriptive features checked against the official property page. Coordinates taken from its published View Map link; no room availability or pricing claim."
+  },
+  {
+    "id": "marriott-ritz-tokyo",
+    "name": "The Ritz-Carlton, Tokyo",
+    "group": "Marriott",
+    "brand": "The Ritz-Carlton",
+    "city": "Tokyo",
+    "country": "Japan",
+    "region": "Asia-Pacific",
+    "lat": 35.665981,
+    "lng": 139.731122,
+    "url": "https://www.ritzcarlton.com/en/hotels/tyorz-the-ritz-carlton-tokyo/overview/",
+    "description": "Occupying the upper nine floors of Midtown Tower, this Roppongi hotel combines broad city views with fine dining, an indoor pool and a spa. Rooms look toward different parts of Tokyo and, in suitable conditions, Mount Fuji.",
+    "why": "The elevated setting brings an unusually expansive perspective to a stay in Tokyo’s design and entertainment district.",
+    "tags": [
+      "city",
+      "design"
+    ],
+    "sources": [
+      "https://www.ritzcarlton.com/en/hotels/tyorz-the-ritz-carlton-tokyo/overview/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.google.com/maps/search/?api=1&gl=JP&hl=en&query=35.665981%2C139.731122",
+    "coordinatePrecision": "Official property map pin; not survey or entrance-level precision.",
+    "coordinateEvidence": "https://www.ritzcarlton.com/en/hotels/tyorz-the-ritz-carlton-tokyo/overview/ (official View Map link: https://www.google.com/maps/search/?api=1&gl=JP&hl=en&query=35.665981%2C139.731122)",
+    "verificationNotes": "Name, affiliation, destination and descriptive features checked against the official property page. Coordinates taken from its published View Map link; no room availability or pricing claim. The official page announces a temporary closure November 20–25 without a year in the notice; check directly before booking."
+  },
+  {
+    "id": "marriott-st-regis-chengdu",
+    "name": "The St. Regis Chengdu",
+    "group": "Marriott",
+    "brand": "St. Regis",
+    "city": "Chengdu",
+    "country": "China",
+    "region": "Asia-Pacific",
+    "lat": 30.6605,
+    "lng": 104.0743,
+    "url": "https://www.marriott.com/en-us/hotels/ctuxr-the-st-regis-chengdu/overview/",
+    "description": "A central Chengdu hotel with generously sized rooms, classic interiors and butler service. Sichuan and Cantonese dining, an indoor pool and a seasonal outdoor pool accompany access to the city’s shopping and cultural districts.",
+    "why": "Its skyline outlook and regional dining make it a useful urban base for exploring Sichuan’s capital.",
+    "tags": [
+      "city",
+      "design"
+    ],
+    "sources": [
+      "https://www.marriott.com/en-us/hotels/ctuxr-the-st-regis-chengdu/overview/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=30.6605%2C104.0743",
+    "coordinatePrecision": "Official property map pin; not survey or entrance-level precision. Published coordinates are preserved without independent datum or entrance verification.",
+    "coordinateEvidence": "https://www.marriott.com/en-us/hotels/ctuxr-the-st-regis-chengdu/overview/ (official View Map link: https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=30.6605%2C104.0743)",
+    "verificationNotes": "Name, affiliation, destination and descriptive features checked against the official property page. Coordinates taken from its published View Map link; no room availability or pricing claim."
+  },
+  {
+    "id": "marriott-w-guangzhou",
+    "name": "W Guangzhou",
+    "group": "Marriott",
+    "brand": "W Hotels",
+    "city": "Guangzhou",
+    "country": "China",
+    "region": "Asia-Pacific",
+    "lat": 23.121462,
+    "lng": 113.328488,
+    "url": "https://www.marriott.com/en-us/hotels/canwg-w-guangzhou/overview/",
+    "description": "A contemporary hotel in Pearl River New Town brings vivid interiors to Guangzhou’s business and entertainment district. Restaurants, WOOBAR, a spa and an indoor pool complement rooms with bold decorative details.",
+    "why": "Choose it for modern city energy and easy access to the Pearl River New Town skyline.",
+    "tags": [
+      "city",
+      "design"
+    ],
+    "sources": [
+      "https://www.marriott.com/en-us/hotels/canwg-w-guangzhou/overview/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=23.121462%2C113.328488",
+    "coordinatePrecision": "Official property map pin; not survey or entrance-level precision. Published coordinates are preserved without independent datum or entrance verification.",
+    "coordinateEvidence": "https://www.marriott.com/en-us/hotels/canwg-w-guangzhou/overview/ (official View Map link: https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=23.121462%2C113.328488)",
+    "verificationNotes": "Name, affiliation, destination and descriptive features checked against the official property page. Coordinates taken from its published View Map link; no room availability or pricing claim."
+  },
+  {
+    "id": "marriott-jw-singapore-south-beach",
+    "name": "JW Marriott Hotel Singapore South Beach",
+    "group": "Marriott",
+    "brand": "JW Marriott",
+    "city": "Singapore",
+    "country": "Singapore",
+    "region": "Asia-Pacific",
+    "lat": 1.294561,
+    "lng": 103.856119,
+    "url": "https://www.marriott.com/en-us/hotels/sinjw-jw-marriott-hotel-singapore-south-beach/overview/",
+    "description": "This city-center hotel combines restored heritage and contemporary architecture near Marina Bay. Artful interiors, a spa, garden spaces and elevated places to pause sit near Singapore’s museums and business district.",
+    "why": "The contrast between preserved buildings and modern design makes the property a destination for architecture-minded travelers.",
+    "tags": [
+      "city",
+      "design",
+      "historic"
+    ],
+    "sources": [
+      "https://www.marriott.com/en-us/hotels/sinjw-jw-marriott-hotel-singapore-south-beach/overview/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=1.294561%2C103.856119",
+    "coordinatePrecision": "Official property map pin; not survey or entrance-level precision.",
+    "coordinateEvidence": "https://www.marriott.com/en-us/hotels/sinjw-jw-marriott-hotel-singapore-south-beach/overview/ (official View Map link: https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=1.294561%2C103.856119)",
+    "verificationNotes": "Name, affiliation, destination and descriptive features checked against the official property page. Coordinates taken from its published View Map link; no room availability or pricing claim."
+  },
+  {
+    "id": "marriott-st-regis-bangkok",
+    "name": "The St. Regis Bangkok",
+    "group": "Marriott",
+    "brand": "St. Regis",
+    "city": "Bangkok",
+    "country": "Thailand",
+    "region": "Asia-Pacific",
+    "lat": 13.739983,
+    "lng": 100.539877,
+    "url": "https://www.marriott.com/en-us/hotels/bkkxr-the-st-regis-bangkok/overview/",
+    "description": "A downtown Bangkok hotel connects directly to Rajadamri Skytrain station. Thai-influenced suites, butler service, restaurants and a 15th-floor outdoor pool provide a retreat near the Siam shopping area and Lumphini Park.",
+    "why": "Direct rail access makes a convenient starting point for exploring the city beyond the hotel.",
+    "tags": [
+      "city",
+      "design"
+    ],
+    "sources": [
+      "https://www.marriott.com/en-us/hotels/bkkxr-the-st-regis-bangkok/overview/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=13.739983%2C100.539877",
+    "coordinatePrecision": "Official property map pin; not survey or entrance-level precision.",
+    "coordinateEvidence": "https://www.marriott.com/en-us/hotels/bkkxr-the-st-regis-bangkok/overview/ (official View Map link: https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=13.739983%2C100.539877)",
+    "verificationNotes": "Name, affiliation, destination and descriptive features checked against the official property page. Coordinates taken from its published View Map link; no room availability or pricing claim."
+  },
+  {
+    "id": "marriott-edition-sanya",
+    "name": "The Sanya EDITION",
+    "group": "Marriott",
+    "brand": "EDITION",
+    "city": "Sanya, Hainan",
+    "country": "China",
+    "region": "Asia-Pacific",
+    "lat": 18.3651668,
+    "lng": 109.7455768,
+    "url": "https://www.marriott.com/en-us/hotels/syxeb-the-sanya-edition/overview/",
+    "description": "A Haitang Bay resort organized around water, landscaped grounds and a large private-ocean pool. Bamboo, art and contemporary architecture connect the arrival spaces to a horseshoe-shaped hotel overlooking the coast.",
+    "why": "The expansive water-centered design offers a distinctive alternative to a conventional beachfront resort layout.",
+    "tags": [
+      "beach",
+      "island",
+      "design"
+    ],
+    "sources": [
+      "https://www.marriott.com/en-us/hotels/syxeb-the-sanya-edition/overview/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=18.3651668%2C109.7455768",
+    "coordinatePrecision": "Official property map pin; not survey or entrance-level precision. Published coordinates are preserved without independent datum or entrance verification.",
+    "coordinateEvidence": "https://www.marriott.com/en-us/hotels/syxeb-the-sanya-edition/overview/ (official View Map link: https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=18.3651668%2C109.7455768)",
+    "verificationNotes": "Name, affiliation, destination and descriptive features checked against the official property page. Coordinates taken from its published View Map link; no room availability or pricing claim."
+  },
+  {
+    "id": "marriott-jw-phu-quoc",
+    "name": "JW Marriott Phu Quoc Emerald Bay Resort & Spa",
+    "group": "Marriott",
+    "brand": "JW Marriott",
+    "city": "Phu Quoc",
+    "country": "Vietnam",
+    "region": "Asia-Pacific",
+    "lat": 10.032,
+    "lng": 104.02825,
+    "url": "https://www.marriott.com/en-us/hotels/pqcjw-jw-marriott-phu-quoc-emerald-bay-resort-and-spa/overview/",
+    "description": "On Khem Beach, Bill Bensley’s university-themed resort uses colorful buildings and playful interiors to create a theatrical coastal retreat. Rooms have balconies, while villas add plunge pools and the grounds include a shell-shaped swimming pool.",
+    "why": "The imaginative campus theme makes the architecture as much a reason to visit as the beach.",
+    "tags": [
+      "beach",
+      "island",
+      "design"
+    ],
+    "sources": [
+      "https://www.marriott.com/en-us/hotels/pqcjw-jw-marriott-phu-quoc-emerald-bay-resort-and-spa/overview/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=10.032%2C104.02825",
+    "coordinatePrecision": "Official property map pin; not survey or entrance-level precision.",
+    "coordinateEvidence": "https://www.marriott.com/en-us/hotels/pqcjw-jw-marriott-phu-quoc-emerald-bay-resort-and-spa/overview/ (official View Map link: https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=10.032%2C104.02825)",
+    "verificationNotes": "Name, affiliation, destination and descriptive features checked against the official property page. Coordinates taken from its published View Map link; no room availability or pricing claim."
+  },
+  {
+    "id": "marriott-w-bali-seminyak",
+    "name": "W Bali - Seminyak",
+    "group": "Marriott",
+    "brand": "W Hotels",
+    "city": "Seminyak, Bali",
+    "country": "Indonesia",
+    "region": "Asia-Pacific",
+    "lat": -8.677173,
+    "lng": 115.150343,
+    "url": "https://www.marriott.com/en-us/hotels/dpswh-w-bali-seminyak/overview/",
+    "description": "A beachfront resort in Seminyak pairs garden and Indian Ocean views with private-pool villas. Its terraced swimming pool draws inspiration from rice fields, while dining and nightlife connect the resort to the surrounding neighborhood.",
+    "why": "A fitting choice for a beach stay with an active social scene and contemporary design.",
+    "tags": [
+      "beach",
+      "island",
+      "design"
+    ],
+    "sources": [
+      "https://www.marriott.com/en-us/hotels/dpswh-w-bali-seminyak/overview/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=-8.677173%2C115.150343",
+    "coordinatePrecision": "Official property map pin; not survey or entrance-level precision.",
+    "coordinateEvidence": "https://www.marriott.com/en-us/hotels/dpswh-w-bali-seminyak/overview/ (official View Map link: https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=-8.677173%2C115.150343)",
+    "verificationNotes": "Name, affiliation, destination and descriptive features checked against the official property page. Coordinates taken from its published View Map link; no room availability or pricing claim."
+  },
+  {
+    "id": "marriott-st-regis-langkawi",
+    "name": "The St. Regis Langkawi",
+    "group": "Marriott",
+    "brand": "St. Regis",
+    "city": "Langkawi",
+    "country": "Malaysia",
+    "region": "Asia-Pacific",
+    "lat": 6.296172049923297,
+    "lng": 99.86257063943359,
+    "url": "https://www.marriott.com/en-us/hotels/lgkxr-the-st-regis-langkawi/overview/",
+    "description": "A resort on Langkawi’s southeastern coast sits between rainforest and the Andaman Sea. Suites and over-water villas, an infinity pool and waterfront dining focus attention on the sheltered coastal setting.",
+    "why": "Its combination of rainforest, lagoon and over-water architecture gives this island stay a strong sense of place.",
+    "tags": [
+      "beach",
+      "island",
+      "nature"
+    ],
+    "sources": [
+      "https://www.marriott.com/en-us/hotels/lgkxr-the-st-regis-langkawi/overview/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=6.296172049923297%2C99.86257063943359",
+    "coordinatePrecision": "Official property map pin; not survey or entrance-level precision.",
+    "coordinateEvidence": "https://www.marriott.com/en-us/hotels/lgkxr-the-st-regis-langkawi/overview/ (official View Map link: https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=6.296172049923297%2C99.86257063943359)",
+    "verificationNotes": "Name, affiliation, destination and descriptive features checked against the official property page. Coordinates taken from its published View Map link; no room availability or pricing claim."
+  },
+  {
+    "id": "marriott-w-amsterdam",
+    "name": "W Amsterdam",
+    "group": "Marriott",
+    "brand": "W Hotels",
+    "city": "Amsterdam",
+    "country": "Netherlands",
+    "region": "Europe",
+    "lat": 52.372799,
+    "lng": 4.88976,
+    "url": "https://www.marriott.com/en-us/hotels/amswh-w-amsterdam/overview/",
+    "description": "Two former commercial buildings near Dam Square have become a contemporary hotel: a bank and a telephone exchange. A rooftop pool and lounge overlook the city, while restored interiors preserve different layers of Dutch architecture.",
+    "why": "The paired buildings let historic financial and communications spaces become part of the stay.",
+    "tags": [
+      "city",
+      "design",
+      "historic"
+    ],
+    "sources": [
+      "https://www.marriott.com/en-us/hotels/amswh-w-amsterdam/overview/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=52.372799%2C4.88976",
+    "coordinatePrecision": "Official property map pin; not survey or entrance-level precision.",
+    "coordinateEvidence": "https://www.marriott.com/en-us/hotels/amswh-w-amsterdam/overview/ (official View Map link: https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=52.372799%2C4.88976)",
+    "verificationNotes": "Name, affiliation, destination and descriptive features checked against the official property page. Coordinates taken from its published View Map link; no room availability or pricing claim."
+  },
+  {
+    "id": "marriott-prince-de-galles",
+    "name": "Prince de Galles, a Luxury Collection Hotel, Paris",
+    "group": "Marriott",
+    "brand": "The Luxury Collection",
+    "city": "Paris",
+    "country": "France",
+    "region": "Europe",
+    "lat": 48.86903,
+    "lng": 2.30083,
+    "url": "https://www.marriott.com/en-us/hotels/parlc-prince-de-galles-a-luxury-collection-hotel-paris/overview/",
+    "description": "Opened in 1929 on Avenue George V, this Paris hotel retains an Art Deco identity close to the Champs-Élysées. Rooms and suites, a wellness suite and restaurants connect a historic address with contemporary hospitality.",
+    "why": "Its Art Deco character offers a distinctive architectural lens on a classic Paris neighborhood.",
+    "tags": [
+      "city",
+      "design",
+      "historic"
+    ],
+    "sources": [
+      "https://www.marriott.com/en-us/hotels/parlc-prince-de-galles-a-luxury-collection-hotel-paris/overview/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=48.86903%2C2.30083",
+    "coordinatePrecision": "Official property map pin; not survey or entrance-level precision.",
+    "coordinateEvidence": "https://www.marriott.com/en-us/hotels/parlc-prince-de-galles-a-luxury-collection-hotel-paris/overview/ (official View Map link: https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=48.86903%2C2.30083)",
+    "verificationNotes": "Name, affiliation, destination and descriptive features checked against the official property page. Coordinates taken from its published View Map link; no room availability or pricing claim."
+  },
+  {
+    "id": "marriott-st-regis-rome",
+    "name": "The St. Regis Rome",
+    "group": "Marriott",
+    "brand": "St. Regis",
+    "city": "Rome",
+    "country": "Italy",
+    "region": "Europe",
+    "lat": 41.9037,
+    "lng": 12.495,
+    "url": "https://www.marriott.com/en-us/hotels/romxr-the-st-regis-rome/overview/",
+    "description": "A grand palazzo hotel introduced in 1894 brings high ceilings, handmade glass and richly textured fabrics to central Rome. Restored historic spaces are paired with modern interiors and the St. Regis approach to service.",
+    "why": "The building itself adds a residential-palace dimension to exploring Rome’s historic center.",
+    "tags": [
+      "city",
+      "historic",
+      "design"
+    ],
+    "sources": [
+      "https://www.marriott.com/en-us/hotels/romxr-the-st-regis-rome/overview/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=41.9037%2C12.495",
+    "coordinatePrecision": "Official property map pin; not survey or entrance-level precision.",
+    "coordinateEvidence": "https://www.marriott.com/en-us/hotels/romxr-the-st-regis-rome/overview/ (official View Map link: https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=41.9037%2C12.495)",
+    "verificationNotes": "Name, affiliation, destination and descriptive features checked against the official property page. Coordinates taken from its published View Map link; no room availability or pricing claim."
+  },
+  {
+    "id": "marriott-grande-bretagne-athens",
+    "name": "Hotel Grande Bretagne, a Luxury Collection Hotel, Athens",
+    "group": "Marriott",
+    "brand": "The Luxury Collection",
+    "city": "Athens",
+    "country": "Greece",
+    "region": "Europe",
+    "lat": 37.97636,
+    "lng": 23.73529,
+    "url": "https://www.marriott.com/en-us/hotels/athlc-hotel-grande-bretagne-a-luxury-collection-hotel-athens/overview/",
+    "description": "A landmark hotel beside Syntagma Square has welcomed guests since 1874. Classical interiors, afternoon tea in the Winter Garden and a rooftop restaurant connect the stay to views of the Acropolis and the heart of Athens.",
+    "why": "The roof garden places one of the world’s most recognizable ancient landmarks within the hotel experience.",
+    "tags": [
+      "city",
+      "historic",
+      "design"
+    ],
+    "sources": [
+      "https://www.marriott.com/en-us/hotels/athlc-hotel-grande-bretagne-a-luxury-collection-hotel-athens/overview/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=37.97636%2C23.73529",
+    "coordinatePrecision": "Official property map pin; not survey or entrance-level precision.",
+    "coordinateEvidence": "https://www.marriott.com/en-us/hotels/athlc-hotel-grande-bretagne-a-luxury-collection-hotel-athens/overview/ (official View Map link: https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=37.97636%2C23.73529)",
+    "verificationNotes": "Name, affiliation, destination and descriptive features checked against the official property page. Coordinates taken from its published View Map link; no room availability or pricing claim. The official page currently notes GB Spa renovation; confirm facilities before booking."
+  },
+  {
+    "id": "marriott-jw-vancouver",
+    "name": "JW Marriott Parq Vancouver",
+    "group": "Marriott",
+    "brand": "JW Marriott",
+    "city": "Vancouver",
+    "country": "Canada",
+    "region": "Americas",
+    "lat": 49.275435076442804,
+    "lng": -123.11286249792262,
+    "url": "https://www.marriott.com/en-us/hotels/yvrjw-jw-marriott-parq-vancouver/overview/",
+    "description": "A contemporary hotel in Vancouver’s stadium and entertainment district looks toward the city, water and mountains. Floor-to-ceiling windows, a spa and the surrounding Parq dining venues complement access to Yaletown and False Creek.",
+    "why": "The location links urban events and dining with Vancouver’s waterfront setting.",
+    "tags": [
+      "city",
+      "design"
+    ],
+    "sources": [
+      "https://www.marriott.com/en-us/hotels/yvrjw-jw-marriott-parq-vancouver/overview/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=49.275435076442804%2C-123.11286249792262",
+    "coordinatePrecision": "Official property map pin; not survey or entrance-level precision.",
+    "coordinateEvidence": "https://www.marriott.com/en-us/hotels/yvrjw-jw-marriott-parq-vancouver/overview/ (official View Map link: https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=49.275435076442804%2C-123.11286249792262)",
+    "verificationNotes": "Name, affiliation, destination and descriptive features checked against the official property page. Coordinates taken from its published View Map link; no room availability or pricing claim."
+  },
+  {
+    "id": "marriott-w-seattle",
+    "name": "W Seattle",
+    "group": "Marriott",
+    "brand": "W Hotels",
+    "city": "Seattle",
+    "country": "United States",
+    "region": "Americas",
+    "lat": 47.60751930635497,
+    "lng": -122.33371061787808,
+    "url": "https://www.marriott.com/en-us/hotels/seawh-w-seattle/overview/",
+    "description": "A downtown Seattle hotel centers its social spaces on a fireplace lounge with live music and DJ events. Pacific Northwest-inspired dining at TRACE Market complements a location near Pike Place Market and the Seattle Art Museum.",
+    "why": "The music-led atmosphere offers a lively base for exploring Seattle’s downtown cultural scene.",
+    "tags": [
+      "city",
+      "design"
+    ],
+    "sources": [
+      "https://www.marriott.com/en-us/hotels/seawh-w-seattle/overview/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=47.60751930635497%2C-122.33371061787808",
+    "coordinatePrecision": "Official property map pin; not survey or entrance-level precision.",
+    "coordinateEvidence": "https://www.marriott.com/en-us/hotels/seawh-w-seattle/overview/ (official View Map link: https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=47.60751930635497%2C-122.33371061787808)",
+    "verificationNotes": "Name, affiliation, destination and descriptive features checked against the official property page. Coordinates taken from its published View Map link; no room availability or pricing claim."
+  },
+  {
+    "id": "marriott-ritz-santiago",
+    "name": "The Ritz-Carlton, Santiago",
+    "group": "Marriott",
+    "brand": "The Ritz-Carlton",
+    "city": "Santiago",
+    "country": "Chile",
+    "region": "Americas",
+    "lat": -33.41589,
+    "lng": -70.59539,
+    "url": "https://www.ritzcarlton.com/en/hotels/sclrz-the-ritz-carlton-santiago/overview/",
+    "description": "In Santiago’s El Golf neighborhood, this hotel combines city-view rooms with Restaurant Estró and a rooftop health and fitness center. Spa services and contemporary accommodation provide a base in the Las Condes district.",
+    "why": "The urban setting offers a comfortable starting point for discovering Santiago with the Andes beyond the city.",
+    "tags": [
+      "city",
+      "design"
+    ],
+    "sources": [
+      "https://www.ritzcarlton.com/en/hotels/sclrz-the-ritz-carlton-santiago/overview/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=-33.41589%2C-70.59539",
+    "coordinatePrecision": "Official property map pin; not survey or entrance-level precision.",
+    "coordinateEvidence": "https://www.ritzcarlton.com/en/hotels/sclrz-the-ritz-carlton-santiago/overview/ (official View Map link: https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=-33.41589%2C-70.59539)",
+    "verificationNotes": "Name, affiliation, destination and descriptive features checked against the official property page. Coordinates taken from its published View Map link; no room availability or pricing claim."
+  },
+  {
+    "id": "marriott-ritz-montreal",
+    "name": "The Ritz-Carlton, Montreal",
+    "group": "Marriott",
+    "brand": "The Ritz-Carlton",
+    "city": "Montreal",
+    "country": "Canada",
+    "region": "Americas",
+    "lat": 45.500377,
+    "lng": -73.578022,
+    "url": "https://www.ritzcarlton.com/en/hotels/yulrm-the-ritz-carlton-montreal/overview/",
+    "description": "A landmark dating to 1912 pairs preserved architectural details with updated rooms in downtown Montreal. Maison Boulud, afternoon tea in the Palm Court and an indoor saltwater pool contribute to its residential atmosphere.",
+    "why": "The Palm Court retains elements from the hotel’s earliest years, giving the stay a tangible connection to Montreal’s hospitality history.",
+    "tags": [
+      "city",
+      "historic",
+      "design"
+    ],
+    "sources": [
+      "https://www.ritzcarlton.com/en/hotels/yulrm-the-ritz-carlton-montreal/overview/"
+    ],
+    "verifiedAt": "2026-10-19",
+    "coordinateSource": "https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=45.500377%2C-73.578022",
+    "coordinatePrecision": "Official property map pin; not survey or entrance-level precision.",
+    "coordinateEvidence": "https://www.ritzcarlton.com/en/hotels/yulrm-the-ritz-carlton-montreal/overview/ (official View Map link: https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=45.500377%2C-73.578022)",
+    "verificationNotes": "Name, affiliation, destination and descriptive features checked against the official property page. Coordinates taken from its published View Map link; no room availability or pricing claim."
+  }
+]

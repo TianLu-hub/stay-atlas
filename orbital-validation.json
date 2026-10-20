@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-19",
+  "checks": [
+    "Globe enabled by default; discovery hidden",
+    "Search and group filtering",
+    "Hotel selection closes drawer",
+    "Hotel detail and save",
+    "Wishlist persists after reload",
+    "Curated journey and filtered surprise",
+    "Mobile discovery and detail without horizontal overflow",
+    "Interactive fallback with map provider blocked",
+    "No page runtime errors"
+  ],
+  "errors": []
+}

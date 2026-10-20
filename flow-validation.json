@@ -1,0 +1,12 @@
+{
+  "errors": [],
+  "checks": [
+    "Animated shader renders without runtime errors",
+    "Globe dragging remains available",
+    "Reduced-motion rendering captured for comparison",
+    "Earth pixels change over seven seconds with motion enabled",
+    "Reduced-motion Earth pixels remain unchanged over seven seconds"
+  ],
+  "flow_mean_pixel_change": 2.3515,
+  "still_mean_pixel_change": 0.0
+}

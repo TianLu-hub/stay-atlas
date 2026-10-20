@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-19",
+  "checks": [
+    "NASA day/night/cloud shader ready",
+    "All 40 curated hotels accessible with scope explanation",
+    "Combined destination and group filters",
+    "Hotel selection transitions to detailed vector map",
+    "Details and persistent wishlist",
+    "Globe and Mercator shader variants render",
+    "Mobile satellite globe and discovery; no overflow",
+    "Missing texture falls back to interactive atlas",
+    "No runtime or console errors in normal path"
+  ],
+  "errors": []
+}

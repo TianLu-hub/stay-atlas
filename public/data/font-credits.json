@@ -1,0 +1,42 @@
+[
+  {
+    "filename": "cormorant-regular.ttf",
+    "sourceURL": "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3umX5slCNuHLi8bLeY9MK7whWMhyjypVO7abI26QOD_v86GnM.ttf",
+    "license": "SIL Open Font License 1.1"
+  },
+  {
+    "filename": "cormorant-italic.ttf",
+    "sourceURL": "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3smX5slCNuHLi8bLeY9MK7whWMhyjYrGFEsdtdc62E6zd58jDOjw.ttf",
+    "license": "SIL Open Font License 1.1"
+  },
+  {
+    "filename": "cormorant-medium.ttf",
+    "sourceURL": "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3umX5slCNuHLi8bLeY9MK7whWMhyjypVO7abI26QOD_s06GnM.ttf",
+    "license": "SIL Open Font License 1.1"
+  },
+  {
+    "filename": "manrope-regular.ttf",
+    "sourceURL": "https://fonts.gstatic.com/s/manrope/v20/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FO_F.ttf",
+    "license": "SIL Open Font License 1.1"
+  },
+  {
+    "filename": "manrope-medium.ttf",
+    "sourceURL": "https://fonts.gstatic.com/s/manrope/v20/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk7PFO_F.ttf",
+    "license": "SIL Open Font License 1.1"
+  },
+  {
+    "filename": "manrope-semibold.ttf",
+    "sourceURL": "https://fonts.gstatic.com/s/manrope/v20/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4jE-_F.ttf",
+    "license": "SIL Open Font License 1.1"
+  },
+  {
+    "filename": "OFL-cormorant.txt",
+    "sourceURL": "https://raw.githubusercontent.com/google/fonts/main/ofl/cormorantgaramond/OFL.txt",
+    "license": "SIL Open Font License 1.1"
+  },
+  {
+    "filename": "OFL-manrope.txt",
+    "sourceURL": "https://raw.githubusercontent.com/google/fonts/main/ofl/manrope/OFL.txt",
+    "license": "SIL Open Font License 1.1"
+  }
+]

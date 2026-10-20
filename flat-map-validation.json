@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-19",
+  "hotelCount": 80,
+  "countries": 36,
+  "checks": [
+    "Four data and filter tests pass",
+    "TypeScript and production build pass",
+    "Flat Mercator map ready on desktop and 390px mobile",
+    "80 list items on desktop and mobile",
+    "Shanghai search returns three hotels including new Hilton and Marriott entries",
+    "New Shanghai EDITION detail opens",
+    "No mobile horizontal overflow",
+    "No browser console errors observed",
+    "Production URL displays flat map and 80 hotels",
+    "Production search finds new Waldorf Astoria Beijing"
+  ],
+  "deployment": "Published and verified at https://astonishing-pegasus-0d3025.netlify.app/",
+  "netlifyDeploymentId": "6ad68fe0c67948272105e0ec"
+}

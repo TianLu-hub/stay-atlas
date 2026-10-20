@@ -1,0 +1,31 @@
+{
+  "testedAt": "2026-10-19",
+  "viewportSizes": [
+    "1440×1000",
+    "390×844"
+  ],
+  "checks": [
+    "40 properties and live map pins",
+    "group filter and dependent brands",
+    "search + group + experience and filtered surprise",
+    "detail close preserves filters and selection",
+    "wishlist persists after reload and supports stayed status",
+    "remove saved hotel and empty wishlist",
+    "empty results and disabled surprise",
+    "curated journeys use verified tags",
+    "map pin opens matching preview",
+    "globe toggle",
+    "no broken images; map attribution visible",
+    "mobile sheet, detail, and no horizontal overflow",
+    "interactive bundled map fallback with tile provider blocked",
+    "no runtime errors or failed HTTP resources",
+    "Cluster click and card-hover marker highlight",
+    "Detail close preserves marker/camera position and returns focus",
+    "Mobile sheet drag expands hotel list",
+    "Static production build loads all 40 hotels, live map, filtered surprise and selected pin"
+  ],
+  "errors": [],
+  "badResources": [],
+  "build": "TypeScript check and Vite production build passed",
+  "automatedTests": "4 passed"
+}
