@@ -32,7 +32,7 @@ pnpm install --frozen-lockfile
 pnpm dev --port 4173
 ```
 
-打开 http://127.0.0.1:4173/。请通过 HTTP 服务访问，不要直接双击 `index.html`。
+打开 [http://127.0.0.1:4173/](http://127.0.0.1:4173/)。请通过 HTTP 服务访问，不要直接双击 `index.html`。
 
 ### 测试与构建
 
