@@ -2550,3 +2550,34 @@ img[src*="desert"] {
     animation: none;
   }
 }
+
+/* A deliberate area search keeps panning calm and filters predictable. */
+.area-control {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  max-width: calc(100% - 40px);
+  border: 1px solid #a4c9d340;
+  border-radius: 28px;
+  background: #10212bee;
+  box-shadow: 0 6px 28px #0003;
+  backdrop-filter: blur(16px);
+  color: #edf3ed;
+}
+.area-action { display: flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 17px; font-size: 12px; white-space: nowrap; }
+.area-count { padding: 3px 8px; border-radius: 12px; background: #c2e6ee17; color: #bde2ed; font-variant-numeric: tabular-nums; }
+.area-clear { display: grid; place-items: center; width: 44px; min-height: 44px; border-left: 1px solid #a4c9d326; }
+.area-action:hover, .area-clear:hover { color: #bde2ed; }
+.area-action:focus-visible, .area-clear:focus-visible, .area-selection button:focus-visible { outline: 2px solid #c1e6ef; outline-offset: 3px; border-radius: 24px; }
+.area-selection { display: flex; align-items: center; gap: 7px; font-size: 11px; color: #acd1db; padding-left: 10px; border: 1px solid #a4c9d326; border-radius: 10px; margin: 4px 0 10px; }
+.area-selection button { display: grid; place-items: center; margin-left: auto; min-width: 44px; min-height: 44px; }
+@media (max-width: 759px) {
+  .area-control { top: 84px; }
+  .area-action { font-size: 11px; gap: 8px; padding: 0 13px; }
+}
+
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }

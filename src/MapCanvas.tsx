@@ -11,6 +11,7 @@ import maplibregl, {
 } from "maplibre-gl";
 import { Plus, Minus, Globe2, LocateFixed } from "lucide-react";
 import type { Hotel, Saved } from "./model";
+import type { MapArea } from "./mapArea";
 import "maplibre-gl/dist/maplibre-gl.css";
 export type MapHandle = { flyTo: (h: Hotel) => void; reset: () => void };
 const reduced = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -24,8 +25,10 @@ export const MapCanvas = forwardRef<
     selected: string | null;
     hovered: string | null;
     onSelect: (h: Hotel) => void;
+    onViewportChange: (area: MapArea | null) => void;
+    onReset: () => void;
   }
->(function MapCanvas({ hotels, saved, selected, hovered, onSelect }, ref) {
+>(function MapCanvas({ hotels, saved, selected, hovered, onSelect, onViewportChange, onReset }, ref) {
   const host = useRef<HTMLDivElement>(null),
     map = useRef<maplibregl.Map | null>(null),
     markers = useRef(new Map<string, maplibregl.Marker>()),
@@ -41,6 +44,11 @@ export const MapCanvas = forwardRef<
   const refreshRef = useRef(() => {});
   const hidePreviewRef = useRef(() => {});
   const updatingSource = useRef(false);
+  const navigated = useRef(false);
+  const viewportCallback = useRef(onViewportChange);
+  const resetCallback = useRef(onReset);
+  viewportCallback.current = onViewportChange;
+  resetCallback.current = onReset;
   hotelsRef.current = hotels;
   callback.current = onSelect;
   savedRef.current = saved;
@@ -60,7 +68,10 @@ export const MapCanvas = forwardRef<
       essential: false,
     });
   };
-  const reset = () =>
+  const reset = () => {
+    navigated.current = false;
+    viewportCallback.current(null);
+    resetCallback.current();
     map.current?.flyTo({
       center: [8, 18],
       zoom: worldZoom(),
@@ -72,6 +83,7 @@ export const MapCanvas = forwardRef<
           : { left: 0, right: 0, top: 20, bottom: 60 },
       duration: reduced() ? 0 : 1800,
     });
+  };
   useImperativeHandle(ref, () => ({ flyTo: fly, reset }));
   useEffect(() => {
     let dead = false;
@@ -131,7 +143,22 @@ export const MapCanvas = forwardRef<
           }),
         });
         map.current = m;
-        m.on("movestart", hidePreview);
+        m.on("movestart", (event) => {
+          hidePreview();
+          if (event.originalEvent) navigated.current = true;
+          viewportCallback.current(null);
+        });
+        m.on("moveend", () => {
+          if (!navigated.current) return;
+          const bounds = m.getBounds();
+          viewportCallback.current({
+            // This atlas draws one world; beyond its edges is empty canvas.
+            west: Math.max(-180, bounds.getWest()),
+            east: Math.min(180, bounds.getEast()),
+            south: Math.max(-90, bounds.getSouth()),
+            north: Math.min(90, bounds.getNorth()),
+          });
+        });
         m.on("zoom", () => setWorld(m.getZoom() < 3));
         m.addControl(
           new maplibregl.AttributionControl({
@@ -279,6 +306,7 @@ export const MapCanvas = forwardRef<
                     const z = await (
                       m.getSource("hotels") as GeoJSONSource
                     ).getClusterExpansionZoom(p.cluster_id);
+                    navigated.current = true;
                     m.easeTo({
                       center: (feature.geometry as { coordinates: number[] })
                         .coordinates as [number, number],
@@ -438,16 +466,20 @@ export const MapCanvas = forwardRef<
         <button
           title="Zoom in"
           aria-label="Zoom in"
-          onClick={() => map.current?.zoomIn({ duration: reduced() ? 0 : 300 })}
+          onClick={() => {
+            navigated.current = true;
+            map.current?.zoomIn({ duration: reduced() ? 0 : 300 });
+          }}
         >
           <Plus size={18} />
         </button>
         <button
           title="Zoom out"
           aria-label="Zoom out"
-          onClick={() =>
-            map.current?.zoomOut({ duration: reduced() ? 0 : 300 })
-          }
+          onClick={() => {
+            navigated.current = true;
+            map.current?.zoomOut({ duration: reduced() ? 0 : 300 });
+          }}
         >
           <Minus size={18} />
         </button>

@@ -30,6 +30,7 @@ import {
   type Saved,
   type Status,
 } from "./model";
+import { filterByMapArea, type MapArea } from "./mapArea";
 import "./style.css";
 function App() {
   const [hotels, setHotels] = useState<Hotel[]>([]),
@@ -37,6 +38,8 @@ function App() {
     [filters, setFilters] = useState<Filters>(initialFilters),
     [saved, setSaved] = useState<Saved>(readSaved),
     [selected, setSelected] = useState<Hotel | null>(null),
+    [viewport, setViewport] = useState<MapArea | null>(null),
+    [area, setArea] = useState<MapArea | null>(null),
     [hovered, setHovered] = useState<string | null>(null),
     [drawer, setDrawer] = useState(false),
     [more, setMore] = useState(false),
@@ -85,10 +88,24 @@ function App() {
         document.querySelector<HTMLInputElement>(".search-wrap input")?.focus(),
       );
   }, [drawer]);
-  const results = useMemo(
+  const matchingHotels = useMemo(
     () => filterHotels(hotels, filters, saved),
     [hotels, filters, saved],
   );
+  const results = useMemo(() => filterByMapArea(matchingHotels, area), [matchingHotels, area]);
+  const visibleCount = useMemo(() => filterByMapArea(matchingHotels, viewport).length, [matchingHotels, viewport]);
+  const areaChanged = viewport && (!area ||
+    (Object.keys(viewport) as (keyof MapArea)[]).some(key => Math.abs(viewport[key] - area[key]) > 0.00001));
+  function clearArea() {
+    setArea(null);
+    setSelected(null);
+  }
+  function searchArea() {
+    if (!viewport) return;
+    setArea(viewport);
+    setSelected(null);
+    setHovered(null);
+  }
   const brands = useMemo(
     () =>
       [
@@ -134,6 +151,7 @@ function App() {
     setSelected(null);
   }
   function clear() {
+    clearArea();
     update({ ...initialFilters, wishlist: filters.wishlist });
   }
   function surprise() {
@@ -219,7 +237,20 @@ function App() {
           selected={selected?.id || null}
           hovered={hovered}
           onSelect={select}
+          onViewportChange={setViewport}
+          onReset={clearArea}
         />
+        {!drawer && !selected && (viewport || area) && (
+          <div className={"area-control " + (area ? "is-active" : "") } aria-label="Map area search">
+            <button className="area-action" onClick={areaChanged ? searchArea : () => { setDrawer(true); setExpanded(true); }}>
+              {areaChanged ? <Search size={15} /> : <MapPin size={15} />}
+              <span>{areaChanged ? "Search this area" : "Stays in this area"}</span>
+              <span className="area-count">{areaChanged ? visibleCount : results.length}</span>
+            </button>
+            {area && <button className="area-clear" aria-label="Clear map area filter" title="Show all areas" onClick={clearArea}><X size={15} /></button>}
+          </div>
+        )}
+        <span className="sr-only" role="status">{area ? `${results.length} stays in the selected map area. Other filters still apply.` : "Exploring all areas."}</span>
         {drawer && (
           <section
             className={"discovery " + (expanded ? "expanded" : "")}
@@ -319,15 +350,21 @@ function App() {
                 <SlidersHorizontal size={14} /> Refine your stay{" "}
                 <ChevronDown size={13} />
               </button>
-              {activeFilters && (
+              {(activeFilters || area) && (
                 <button className="text-button" onClick={clear}>
                   Clear all
                 </button>
               )}
               <span className="whole-world">
-                <Globe2 size={12} /> Worldwide
+                <Globe2 size={12} /> {area ? "Map area" : "Worldwide"}
               </span>
             </div>
+            {area && (
+              <div className="area-selection">
+                <MapPin size={13} /><span>Within your selected map area</span>
+                <button aria-label="Clear map area filter" title="Show all areas" onClick={clearArea}><X size={14} /></button>
+              </div>
+            )}
             {more && (
               <div className="extra-filters">
                 <label>
@@ -433,21 +470,21 @@ function App() {
                 <div className="empty">
                   <Compass size={34} />
                   <h2>
-                    {filters.wishlist
+                    {area ? "A little further afield?" : filters.wishlist
                       ? "Your atlas begins here."
                       : "A little further afield?"}
                   </h2>
                   <p>
-                    {filters.wishlist
+                    {area ? "No stays match this area and your filters. Try another part of the map or show all areas." : filters.wishlist
                       ? "Save a hotel that speaks to you. You’ll find it here, ready for someday."
                       : "No stays match this combination. Clear a filter and let the world open up."}
                   </p>
                   <button
                     onClick={() =>
-                      filters.wishlist ? update({ ...initialFilters }) : clear()
+                      area ? clearArea() : filters.wishlist ? update({ ...initialFilters }) : clear()
                     }
                   >
-                    {filters.wishlist
+                    {area ? "Show all areas" : filters.wishlist
                       ? "Explore the collection"
                       : "Reset filters"}{" "}
                     <ArrowRight size={15} />
@@ -531,6 +568,7 @@ function App() {
               aria-label={`View all ${hotels.length} curated hotels`}
               title={`${hotels.length} curated hotels. Numbered dots group nearby hotels; zoom in to discover each stay.`}
               onClick={() => {
+                clearArea();
                 update({ ...initialFilters });
                 setDrawer(true);
                 setExpanded(true);
