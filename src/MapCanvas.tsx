@@ -39,6 +39,8 @@ export const MapCanvas = forwardRef<
     [lowDetail, setLowDetail] = useState(false),
     [world, setWorld] = useState(true);
   const refreshRef = useRef(() => {});
+  const hidePreviewRef = useRef(() => {});
+  const updatingSource = useRef(false);
   hotelsRef.current = hotels;
   callback.current = onSelect;
   savedRef.current = saved;
@@ -74,7 +76,36 @@ export const MapCanvas = forwardRef<
   useEffect(() => {
     let dead = false;
     let timer: ReturnType<typeof setTimeout>;
+    let previewTimer: ReturnType<typeof setTimeout>;
     let m: maplibregl.Map;
+    let preview: maplibregl.Popup | null = null;
+    let previewButton: HTMLButtonElement | null = null;
+    let pointerOnPreview = false;
+    let pointerOnPin = false;
+    let previewVersion = 0;
+    const hidePreview = () => {
+      clearTimeout(previewTimer);
+      previewVersion++;
+      previewButton?.classList.remove("previewing");
+      previewButton?.removeAttribute("aria-describedby");
+      previewButton = null;
+      preview?.remove();
+      preview = null;
+      pointerOnPreview = false;
+      pointerOnPin = false;
+    };
+    hidePreviewRef.current = hidePreview;
+    const scheduleHide = () => {
+      clearTimeout(previewTimer);
+      previewTimer = setTimeout(() => {
+        if (!pointerOnPin && !pointerOnPreview && document.activeElement !== previewButton)
+          hidePreview();
+      }, 140);
+    };
+    const dismissPreview = (event: KeyboardEvent) => {
+      if (event.key === "Escape") hidePreview();
+    };
+    document.addEventListener("keydown", dismissPreview);
     const start = async () => {
       try {
         const style = (await fetch("/data/map-style.json").then((r) =>
@@ -100,6 +131,7 @@ export const MapCanvas = forwardRef<
           }),
         });
         map.current = m;
+        m.on("movestart", hidePreview);
         m.on("zoom", () => setWorld(m.getZoom() < 3));
         m.addControl(
           new maplibregl.AttributionControl({
@@ -140,7 +172,7 @@ export const MapCanvas = forwardRef<
           }
           if (host.current) host.current.dataset.mapReady = "true";
           const refresh = () => {
-            if (!m.getSource("hotels") || !m.isSourceLoaded("hotels")) return;
+            if (updatingSource.current || !m.getSource("hotels") || !m.isSourceLoaded("hotels")) return;
             const seen = new Set<string>();
             const fs = m.querySourceFeatures("hotels");
             for (const feature of fs) {
@@ -164,17 +196,85 @@ export const MapCanvas = forwardRef<
                   : h!.group === "Hilton"
                     ? "H"
                     : "M";
-                b.title = cluster
-                  ? `${p.point_count} stays · click to explore`
-                  : `${h!.name} · ${h!.group}`;
                 b.setAttribute(
                   "aria-label",
                   cluster
                     ? `Zoom into ${p.point_count} hotels`
                     : `View ${h!.name}, ${h!.city}`,
                 );
+                const showPreview = async () => {
+                  if (previewButton === b || m.isMoving()) return;
+                  hidePreview();
+                  previewButton = b;
+                  const version = previewVersion;
+                  b.classList.add("previewing");
+                  const card = document.createElement("div");
+                  card.className = "map-peek";
+                  card.id = "atlas-map-peek";
+                  card.setAttribute("role", "tooltip");
+                  const eyebrow = document.createElement("span");
+                  eyebrow.className = "map-peek-eyebrow";
+                  eyebrow.textContent = cluster ? "A little closer" : h!.brand;
+                  const title = document.createElement("strong");
+                  title.textContent = cluster ? `${p.point_count} curated stays` : h!.name;
+                  const location = document.createElement("p");
+                  location.textContent = cluster ? "Explore the places within" : `${h!.city}, ${h!.country}`;
+                  const action = document.createElement("span");
+                  action.className = "map-peek-action";
+                  action.textContent = cluster ? "Select the map point to explore" : "Select the map point to discover";
+                  card.append(eyebrow, title, location, action);
+                  card.addEventListener("pointerenter", () => {
+                    pointerOnPreview = true;
+                    clearTimeout(previewTimer);
+                  });
+                  card.addEventListener("pointerleave", () => {
+                    pointerOnPreview = false;
+                    scheduleHide();
+                  });
+                  preview = new maplibregl.Popup({
+                    closeButton: false,
+                    closeOnClick: false,
+                    focusAfterOpen: false,
+                    offset: 22,
+                    maxWidth: "260px",
+                    className: "atlas-peek-popup",
+                  })
+                    .setLngLat(feature.geometry.coordinates as [number, number])
+                    .setDOMContent(card)
+                    .addTo(m);
+                  b.setAttribute("aria-describedby", card.id);
+                  if (cluster) {
+                    try {
+                      const leaves = await (m.getSource("hotels") as GeoJSONSource)
+                        .getClusterLeaves(p.cluster_id, p.point_count, 0);
+                      if (dead || previewVersion !== version) return;
+                      const ids = new Set(leaves.map((leaf) => String(leaf.properties?.id)));
+                      const stays = hotelsRef.current.filter((hotel) => ids.has(hotel.id));
+                      const cities = [...new Set(stays.map((hotel) => hotel.city))];
+                      location.textContent = cities.slice(0, 3).join(" · ") +
+                        (cities.length > 3 ? ` +${cities.length - 3} more` : "");
+                    } catch {
+                      // Keep the count and exploration hint if the source changed.
+                    }
+                  }
+                };
+                b.addEventListener("pointerenter", (event) => {
+                  if (event.pointerType === "touch") return;
+                  void showPreview();
+                  pointerOnPin = true;
+                  clearTimeout(previewTimer);
+                });
+                b.addEventListener("pointerleave", () => {
+                  pointerOnPin = false;
+                  scheduleHide();
+                });
+                b.addEventListener("focus", () => {
+                  if (b.matches(":focus-visible")) void showPreview();
+                });
+                b.addEventListener("blur", scheduleHide);
                 b.addEventListener("click", async (e) => {
                   e.stopPropagation();
+                  hidePreview();
                   if (cluster) {
                     const z = await (
                       m.getSource("hotels") as GeoJSONSource
@@ -207,6 +307,7 @@ export const MapCanvas = forwardRef<
             }
             for (const [id, marker] of markers.current)
               if (!seen.has(id)) {
+                if (marker.getElement() === previewButton) hidePreview();
                 marker.remove();
                 markers.current.delete(id);
               }
@@ -264,16 +365,35 @@ export const MapCanvas = forwardRef<
     return () => {
       dead = true;
       clearTimeout(timer);
+      hidePreview();
+      hidePreviewRef.current = () => {};
+      document.removeEventListener("keydown", dismissPreview);
       for (const x of markers.current.values()) x.remove();
       markers.current.clear();
       m?.remove();
     };
   }, []);
   useEffect(() => {
-    if (ready)
-      (map.current?.getSource("hotels") as GeoJSONSource)?.setData(
-        collection(hotels),
-      );
+    hidePreviewRef.current();
+    if (!ready) return;
+    const source = map.current?.getSource("hotels") as GeoJSONSource | undefined;
+    if (!source) return;
+    let cancelled = false;
+    updatingSource.current = true;
+    // Cluster IDs can be reused for a different filtered collection.
+    for (const marker of markers.current.values()) marker.remove();
+    markers.current.clear();
+    source.setData(collection(hotels), true).then(() => {
+      if (cancelled) return;
+      updatingSource.current = false;
+      refreshRef.current();
+    }).catch(() => {
+      if (!cancelled) {
+        updatingSource.current = false;
+        setFailed(true);
+      }
+    });
+    return () => { cancelled = true; };
   }, [hotels, ready]);
   useEffect(() => {
     refreshRef.current();

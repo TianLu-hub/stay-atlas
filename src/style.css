@@ -2462,3 +2462,91 @@ img[src*="desert"] {
 .flat-atlas .orbital-bottom {
   text-shadow: 0 1px 8px #061923;
 }
+
+/* Quiet previews appear only when a map point is being explored. */
+.flat-atlas .atlas-pin {
+  transition: box-shadow 180ms ease, background-color 180ms ease;
+}
+.flat-atlas .atlas-pin:before {
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+.flat-atlas .atlas-pin.previewing {
+  z-index: 4;
+}
+.flat-atlas .atlas-pin.previewing:before,
+.flat-atlas .atlas-pin:focus-visible:before {
+  transform: scale(1.35);
+  box-shadow: 0 0 0 5px #a7d9e722, 0 0 18px #9ad6ed66;
+}
+.flat-atlas .atlas-pin.cluster:is(:hover, :focus-visible, .previewing) {
+  background: #244b5a !important;
+  border-color: #c0dce7 !important;
+  box-shadow: 0 0 0 5px #a7d9e718, 0 0 22px #9ad6ed33 !important;
+}
+.flat-atlas .atlas-pin:focus-visible {
+  outline: 1px solid #c0dce7;
+  outline-offset: 3px;
+}
+.atlas-peek-popup {
+  z-index: 6;
+  pointer-events: auto;
+}
+.atlas-peek-popup .maplibregl-popup-content {
+  padding: 0;
+  background: #102935f5;
+  color: #eff4ed;
+  border: 1px solid #a8c6ce3b;
+  border-radius: 14px;
+  box-shadow: 0 14px 40px #020b1466, inset 0 1px #ffffff09;
+  backdrop-filter: blur(16px);
+  animation: peek-arrive 180ms ease-out;
+}
+.atlas-peek-popup .maplibregl-popup-tip {
+  display: none;
+}
+.map-peek {
+  width: 240px;
+  max-width: calc(100vw - 48px);
+  padding: 17px 19px 15px;
+  font-family: Manrope, sans-serif;
+}
+.map-peek-eyebrow {
+  display: block;
+  color: #cbb997;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin-bottom: 9px;
+}
+.map-peek strong {
+  display: block;
+  font-family: "Atlas Serif", Georgia, serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.12;
+  text-wrap: balance;
+}
+.map-peek p {
+  color: #b2c7cf;
+  font-size: 10px;
+  line-height: 1.6;
+  margin: 9px 0 13px;
+}
+.map-peek-action {
+  display: block;
+  border-top: 1px solid #a8c6ce24;
+  padding-top: 11px;
+  font-size: 9px;
+  letter-spacing: .35px;
+  color: #d3e4e8;
+}
+@keyframes peek-arrive {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .atlas-peek-popup .maplibregl-popup-content {
+    animation: none;
+  }
+}
