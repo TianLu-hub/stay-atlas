@@ -2581,3 +2581,15 @@ img[src*="desert"] {
 }
 
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+.share-hotel { flex: 0 0 44px; min-width: 44px; min-height: 44px; }
+.share-hotel.is-copied { color: #35735d; border-color: #83a293; background: #e6eee7; }
+.share-hotel:focus-visible { outline: 2px solid #507d86; outline-offset: 3px; }
+.manual-share { display: block; margin-top: 12px; color: #4b666a; font-size: 11px; line-height: 1.6; }
+.manual-share input { display: block; width: 100%; margin-top: 5px; padding: 10px; min-height: 44px; border: 1px solid #a5b3ac; border-radius: 6px; color: #263f4c; background: #fff; font-size: 12px; }
+@media (max-width: 379px) {
+  .orbital-app .preview-copy { min-width: 0; }
+  .preview-actions { flex-wrap: wrap; }
+  .preview-actions .primary { flex: 1 0 100%; }
+  .preview-actions .secondary { flex-shrink: 0; }
+}

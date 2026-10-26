@@ -13,6 +13,7 @@ import {
   Heart,
   MapPin,
   Search,
+  Share2,
   Shuffle,
   SlidersHorizontal,
   Sparkles,
@@ -31,6 +32,7 @@ import {
   type Status,
 } from "./model";
 import { filterByMapArea, type MapArea } from "./mapArea";
+import { hotelShareUrl, sharedHotelId } from "./hotelLink";
 import "./style.css";
 function App() {
   const [hotels, setHotels] = useState<Hotel[]>([]),
@@ -47,11 +49,18 @@ function App() {
     [dialog, setDialog] = useState<"detail" | "journeys" | "about" | null>(
       null,
     ),
-    [toast, setToast] = useState("");
+    [toast, setToast] = useState(""),
+    [sharedLinkReady, setSharedLinkReady] = useState(false),
+    [copyState, setCopyState] = useState<"idle" | "copying" | "copied" | "manual">("idle");
   const map = useRef<MapHandle>(null),
+    requestedHotelId = useRef(sharedHotelId(location.search)),
+    sharedLinkHandled = useRef(false),
+    selectedId = useRef(selected?.id),
+    manualLink = useRef<HTMLInputElement>(null),
     dragY = useRef(0),
     modal = useRef<HTMLDialogElement>(null),
     toastTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
+  selectedId.current = selected?.id;
   useEffect(() => {
     fetch("/data/hotels.json")
       .then((r) => {
@@ -61,6 +70,33 @@ function App() {
       .then(setHotels)
       .catch(() => setError(true));
   }, []);
+  useEffect(() => {
+    if (!hotels.length || sharedLinkHandled.current) return;
+    sharedLinkHandled.current = true;
+    const id = requestedHotelId.current;
+    if (id) {
+      const hotel = hotels.find(h => h.id === id);
+      if (hotel) select(hotel);
+      else notify("This shared stay is no longer in the collection. Explore another place.");
+    }
+    setSharedLinkReady(true);
+  }, [hotels]);
+  useEffect(() => {
+    // Keep a received hotel's link accurate as its preview changes or closes.
+    if (!sharedLinkReady) return;
+    const url = new URL(location.href);
+    if (!url.searchParams.has("hotel")) return;
+    if (selected) url.searchParams.set("hotel", selected.id);
+    else url.searchParams.delete("hotel");
+    history.replaceState(history.state, "", url);
+  }, [selected?.id, sharedLinkReady]);
+  useEffect(() => { setCopyState("idle"); }, [selected?.id]);
+  useEffect(() => {
+    if (copyState === "manual") {
+      manualLink.current?.focus();
+      manualLink.current?.select();
+    }
+  }, [copyState]);
   useEffect(() => {
     const d = modal.current;
     if (!d) return;
@@ -138,6 +174,20 @@ function App() {
       );
     } catch {
       notify("Saved for this visit. Browser storage is unavailable.");
+    }
+  }
+  async function shareHotel(hotel: Hotel) {
+    const url = hotelShareUrl(hotel.id, location.href);
+    setCopyState("copying");
+    try {
+      await navigator.clipboard.writeText(url);
+      if (selectedId.current !== hotel.id) return;
+      setCopyState("copied");
+      notify("Hotel link copied. Ready to share.");
+    } catch {
+      if (selectedId.current !== hotel.id) return;
+      setCopyState("manual");
+      notify("Select and copy the link below.");
     }
   }
   function select(h: Hotel) {
@@ -672,7 +722,24 @@ function App() {
                     fill={saved[selected.id] ? "currentColor" : "none"}
                   />
                 </button>
+                <button
+                  className={"secondary share-hotel " + (copyState === "copied" ? "is-copied" : "")}
+                  aria-label={copyState === "copied" ? "Hotel link copied" : "Copy hotel link"}
+                  title={copyState === "copied" ? "Link copied" : "Copy hotel link"}
+                  disabled={copyState === "copying"}
+                  onClick={() => void shareHotel(selected)}
+                >
+                  {copyState === "copied" ? <Check size={17} /> : <Share2 size={17} />}
+                </button>
               </div>
+              {copyState === "manual" && (
+                <label className="manual-share">
+                  Copy this hotel link
+                  <input ref={manualLink} type="text" readOnly aria-label="Hotel link to copy"
+                    value={hotelShareUrl(selected.id, location.href)}
+                    onFocus={e => e.currentTarget.select()} onClick={e => e.currentTarget.select()} />
+                </label>
+              )}
               <div className="preview-pagination">
                 <button
                   aria-label="Previous hotel"
