@@ -5,11 +5,15 @@ import { filterHotels, initialFilters, journeys } from "../src/model.ts";
 const hotels = JSON.parse(
   readFileSync(new URL("../public/data/hotels.json", import.meta.url)),
 );
-test("collection has 80 unique properties, balanced groups, sourced geographic coordinates", () => {
-  assert.equal(hotels.length, 80);
-  assert.equal(new Set(hotels.map((h) => h.id)).size, 80);
+test("collection has 88 unique properties, balanced groups, sourced geographic coordinates", () => {
+  assert.equal(hotels.length, 88);
+  assert.equal(new Set(hotels.map((h) => h.id)).size, 88);
+  assert.equal(new Set(hotels.map((h) => h.country)).size, 44);
   for (const group of ["Hilton", "Marriott"])
-    assert.equal(hotels.filter((h) => h.group === group).length, 40);
+    assert.equal(hotels.filter((h) => h.group === group).length, 44);
+  // A new batch must not imply that the original collection was reverified.
+  assert.equal(hotels.filter((h) => h.verifiedAt === "2026-10-19").length, 80);
+  assert.equal(hotels.filter((h) => h.verifiedAt === "2026-10-27").length, 8);
   for (const region of [
     "Americas",
     "Europe",
@@ -26,7 +30,7 @@ test("collection has 80 unique properties, balanced groups, sourced geographic c
     assert.equal(new URL(h.url).protocol, "https:");
     assert.equal(new URL(h.coordinateSource).protocol, "https:");
     assert.ok(h.coordinatePrecision);
-    assert.equal(h.verifiedAt, "2026-10-19");
+    assert.match(h.verifiedAt, /^\d{4}-\d{2}-\d{2}$/);
     assert.ok(h.brand !== h.group || h.brand === "Hilton");
   }
 });

@@ -2109,5 +2109,214 @@
     "coordinatePrecision": "Official property map pin; not survey or entrance-level precision.",
     "coordinateEvidence": "https://www.ritzcarlton.com/en/hotels/yulrm-the-ritz-carlton-montreal/overview/ (official View Map link: https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=45.500377%2C-73.578022)",
     "verificationNotes": "Name, affiliation, destination and descriptive features checked against the official property page. Coordinates taken from its published View Map link; no room availability or pricing claim."
+  },
+  {
+    "id": "conrad-algarve",
+    "name": "Conrad Algarve",
+    "group": "Hilton",
+    "brand": "Conrad",
+    "city": "Almancil, Algarve",
+    "country": "Portugal",
+    "region": "Europe",
+    "lat": 37.06203,
+    "lng": -8.02862,
+    "url": "https://www.hilton.com/en/hotels/faoapci-conrad-algarve/",
+    "description": "A Quinta do Lago resort near Ria Formosa Nature Park and the Algarve coast, with spacious rooms, pools and a spa. Dining includes Gusto by Heinz Beck and Portuguese and Mediterranean-inspired menus.",
+    "why": "An inland base for combining the Algarve's nature and food with time by the pool. The hotel also offers a seasonal beach concession at Vale do Lobo.",
+    "tags": [
+      "nature"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/faoapci-conrad-algarve/",
+      "https://mapcarta.com/30931556"
+    ],
+    "verifiedAt": "2026-10-27",
+    "coordinateSource": "https://mapcarta.com/30931556",
+    "coordinatePrecision": "Approximate property location from a published mapping feature; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Hilton property page confirms name, affiliation, destination and described facilities. Retrieved mapping snapshots differ by roughly 140 metres; this marker uses the coordinates displayed on the opened Mapcarta page and does not assert an exact entrance. At the 2026-10-27 check, the official page listed a Gusto restaurant closure for November 24–December 16; confirm dining availability directly."
+  },
+  {
+    "id": "hilton-vienna-plaza",
+    "name": "Hilton Vienna Plaza",
+    "group": "Hilton",
+    "brand": "Hilton Hotels & Resorts",
+    "city": "Vienna",
+    "country": "Austria",
+    "region": "Europe",
+    "lat": 48.21552,
+    "lng": 16.36469,
+    "url": "https://www.hilton.com/en/hotels/viepwtw-hilton-vienna-plaza/",
+    "description": "An Art Deco-inspired hotel beside Vienna's Ringstrasse, with a restaurant, spa and Executive Lounge. The central setting places the Imperial Palace, State Opera and city hall within two kilometres.",
+    "why": "The 1920s design theme gives this city stay a distinct character, while nearby tram and metro connections make it a convenient base for exploring Vienna.",
+    "tags": [
+      "city",
+      "design"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/viepwtw-hilton-vienna-plaza/",
+      "https://mapcarta.com/25308246"
+    ],
+    "verifiedAt": "2026-10-27",
+    "coordinateSource": "https://mapcarta.com/25308246",
+    "coordinatePrecision": "Approximate property location from published OpenStreetMap building feature way 334680828, displayed by Mapcarta; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Hilton property page confirms current name, affiliation, Schottenring address and description. Coordinates separately sourced from the corresponding mapped hotel building; exact entrance is not asserted."
+  },
+  {
+    "id": "hilton-yala",
+    "name": "Hilton Yala Resort",
+    "group": "Hilton",
+    "brand": "Hilton Hotels & Resorts",
+    "city": "Palatupana, Yala",
+    "country": "Sri Lanka",
+    "region": "Asia-Pacific",
+    "lat": 6.25602,
+    "lng": 81.40121,
+    "url": "https://www.hilton.com/en/hotels/kdwyahi-hilton-yala-resort/",
+    "description": "A 42-room resort at the southern edge of Yala National Park overlooking the Indian Ocean. Rooms, suites and villas sit within landscaped grounds, alongside an outdoor pool, spa and three dining venues.",
+    "why": "The architecture is designed to blend into the surrounding landscape, making this a distinctive base for a nature-focused stay beside Yala.",
+    "tags": [
+      "nature",
+      "design"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/kdwyahi-hilton-yala-resort/",
+      "https://mapcarta.com/37461628",
+      "https://stories.hilton.com/apac/releases/hilton-debuts-in-yala-with-opening-of-hilton-yala-resort"
+    ],
+    "verifiedAt": "2026-10-27",
+    "coordinateSource": "https://mapcarta.com/37461628",
+    "coordinatePrecision": "Approximate property location from published OpenStreetMap resort feature way 1204824483, displayed by Mapcarta; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Hilton property page confirms current name, affiliation, Palatupana location and description. The hotel opened in 2023; this is not a proposed property. Coordinates separately sourced; exact entrance is not asserted."
+  },
+  {
+    "id": "hilton-windhoek",
+    "name": "Hilton Windhoek",
+    "group": "Hilton",
+    "brand": "Hilton Hotels & Resorts",
+    "city": "Windhoek",
+    "country": "Namibia",
+    "region": "Africa",
+    "lat": -22.57037,
+    "lng": 17.08538,
+    "url": "https://www.hilton.com/en/hotels/wdhhihi-hilton-windhoek/",
+    "description": "A central Windhoek hotel near the Independence Museum and Craft Market. Its rooftop pool and Skybar overlook the city, with a spa and several dining venues on site.",
+    "why": "A city stop with a clear sense of place: nearby museums and craft shopping pair with broad rooftop views across Namibia's capital.",
+    "tags": [
+      "city"
+    ],
+    "sources": [
+      "https://www.hilton.com/en/hotels/wdhhihi-hilton-windhoek/",
+      "https://mapcarta.com/32111472"
+    ],
+    "verifiedAt": "2026-10-27",
+    "coordinateSource": "https://mapcarta.com/32111472",
+    "coordinatePrecision": "Approximate property location from published OpenStreetMap hotel feature way 906912065, displayed by Mapcarta; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Hilton property page confirms current name, affiliation, Rev. Michael Scott Street address and description. Coordinates separately sourced from the corresponding hotel feature; exact entrance is not asserted."
+  },
+  {
+    "id": "marriott-geneva",
+    "name": "The Ritz-Carlton Hotel de la Paix, Geneva",
+    "group": "Marriott",
+    "brand": "The Ritz-Carlton",
+    "city": "Geneva",
+    "country": "Switzerland",
+    "region": "Europe",
+    "lat": 46.207864,
+    "lng": 6.148653,
+    "url": "https://www.ritzcarlton.com/en/hotels/gvarz-the-ritz-carlton-hotel-de-la-paix-geneva/overview/",
+    "description": "A lakeside Geneva hotel dating to 1865, with contemporary rooms, views toward the Alps and dining spaces overlooking Lake Geneva.",
+    "why": "Its historic waterfront setting pairs a city stay with a quieter lake-facing perspective. The interiors bring modern materials into a long-established Geneva address.",
+    "tags": [
+      "city",
+      "historic",
+      "design"
+    ],
+    "coordinateSource": "https://www.ritzcarlton.com/en/hotels/gvarz-the-ritz-carlton-hotel-de-la-paix-geneva/overview/",
+    "coordinatePrecision": "Approximate property pin published in the official hotel page View Map link; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Ritz-Carlton property page confirms current name, brand, Geneva location, historic origins and description. Coordinates are copied from its View Map link; exact entrance is not asserted.",
+    "sources": [
+      "https://www.ritzcarlton.com/en/hotels/gvarz-the-ritz-carlton-hotel-de-la-paix-geneva/overview/",
+      "https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=46.2078640%2C6.1486530"
+    ],
+    "verifiedAt": "2026-10-27"
+  },
+  {
+    "id": "marriott-muscat",
+    "name": "W Muscat",
+    "group": "Marriott",
+    "brand": "W Hotels",
+    "city": "Muscat",
+    "country": "Oman",
+    "region": "Middle East",
+    "lat": 23.61658,
+    "lng": 58.46618,
+    "url": "https://www.marriott.com/en-us/hotels/mctwh-w-muscat/overview/",
+    "description": "A hotel on the Shatti Al Qurum beachfront, with Gulf of Oman views and contemporary interiors drawing on Omani design. The property includes a spa and outdoor pools.",
+    "why": "A coastal setting within Muscat offers a useful mix of city exploration and time beside the sea. Design details reference local heritage throughout the shared spaces.",
+    "tags": [
+      "beach",
+      "city",
+      "design"
+    ],
+    "coordinateSource": "https://mapcarta.com/N10058657405",
+    "coordinatePrecision": "Approximate property location from published OpenStreetMap node 10058657405 via Mapcarta; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Marriott property page confirms current name, W Hotels affiliation, Muscat location and description. Property coordinates are separately sourced from the published mapping node; exact entrance is not asserted.",
+    "sources": [
+      "https://www.marriott.com/en-us/hotels/mctwh-w-muscat/overview/",
+      "https://mapcarta.com/N10058657405"
+    ],
+    "verifiedAt": "2026-10-27"
+  },
+  {
+    "id": "marriott-amman",
+    "name": "W Amman",
+    "group": "Marriott",
+    "brand": "W Hotels",
+    "city": "Amman",
+    "country": "Jordan",
+    "region": "Middle East",
+    "lat": 31.964214,
+    "lng": 35.902891,
+    "url": "https://www.marriott.com/en-us/hotels/ammwi-w-amman/overview/",
+    "description": "A contemporary hotel in Amman’s Al Abdali district with skyline views, a spa and a seasonal outdoor pool. Its canyon-like entrance takes inspiration from Petra.",
+    "why": "The architecture interprets Jordanian landscapes in a city setting. Bedouin-inspired textiles and the sculptural entrance give the public spaces a strong local reference.",
+    "tags": [
+      "city",
+      "design"
+    ],
+    "coordinateSource": "https://www.marriott.com/en-us/hotels/ammwi-w-amman/overview/",
+    "coordinatePrecision": "Approximate property pin published in the official hotel page View Map link; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Marriott property page confirms current name, W Hotels affiliation, Al Abdali location and design details. Pool operation is seasonal. Coordinates are copied from its View Map link; exact entrance is not asserted.",
+    "sources": [
+      "https://www.marriott.com/en-us/hotels/ammwi-w-amman/overview/",
+      "https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=31.9642140%2C35.9028910"
+    ],
+    "verifiedAt": "2026-10-27"
+  },
+  {
+    "id": "marriott-panama",
+    "name": "The Santa Maria, a Luxury Collection Hotel & Golf Resort, Panama City",
+    "group": "Marriott",
+    "brand": "The Luxury Collection",
+    "city": "Panama City",
+    "country": "Panama",
+    "region": "Americas",
+    "lat": 9.027639,
+    "lng": -79.451167,
+    "url": "https://www.marriott.com/en-us/hotels/ptylc-the-santa-maria-a-luxury-collection-hotel-and-golf-resort-panama-city/overview/",
+    "description": "A Panama City resort beside a Jack Nicklaus-designed golf course, with an outdoor pool and spa. Interior details draw on Panamanian craft traditions.",
+    "why": "Golf-course views introduce a greener setting to a city stay. The suites incorporate locally inspired textiles and handmade objects that connect the design to Panama.",
+    "tags": [
+      "city",
+      "design"
+    ],
+    "coordinateSource": "https://www.marriott.com/en-us/hotels/ptylc-the-santa-maria-a-luxury-collection-hotel-and-golf-resort-panama-city/overview/",
+    "coordinatePrecision": "Approximate property pin published in the official hotel page View Map link; not surveyed or entrance-level verified.",
+    "verificationNotes": "Official Marriott property page confirms current name, Luxury Collection affiliation, Panama City location, golf course and design details. Coordinates are copied from its View Map link; exact entrance is not asserted.",
+    "sources": [
+      "https://www.marriott.com/en-us/hotels/ptylc-the-santa-maria-a-luxury-collection-hotel-and-golf-resort-panama-city/overview/",
+      "https://www.google.com/maps/search/?api=1&gl=US&hl=en&query=9.0276390%2C-79.4511670"
+    ],
+    "verifiedAt": "2026-10-27"
   }
 ]
