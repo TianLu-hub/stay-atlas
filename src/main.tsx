@@ -8,6 +8,7 @@ import {
   Check,
   ChevronDown,
   Compass,
+  Download,
   ExternalLink,
   Globe2,
   Heart,
@@ -33,6 +34,7 @@ import {
 } from "./model";
 import { filterByMapArea, type MapArea } from "./mapArea";
 import { hotelShareUrl, sharedHotelId } from "./hotelLink";
+import { savedStayHotels, savedStaysCsv } from "./savedStaysCsv";
 import "./style.css";
 function App() {
   const [hotels, setHotels] = useState<Hotel[]>([]),
@@ -129,6 +131,7 @@ function App() {
     [hotels, filters, saved],
   );
   const results = useMemo(() => filterByMapArea(matchingHotels, area), [matchingHotels, area]);
+  const exportCount = useMemo(() => savedStayHotels(hotels, saved).length, [hotels, saved]);
   const visibleCount = useMemo(() => filterByMapArea(matchingHotels, viewport).length, [matchingHotels, viewport]);
   const areaChanged = viewport && (!area ||
     (Object.keys(viewport) as (keyof MapArea)[]).some(key => Math.abs(viewport[key] - area[key]) > 0.00001));
@@ -174,6 +177,30 @@ function App() {
       );
     } catch {
       notify("Saved for this visit. Browser storage is unavailable.");
+    }
+  }
+  function exportSavedStays() {
+    const csv = savedStaysCsv(hotels, saved);
+    if (!csv) {
+      notify("Save a stay before exporting your list.");
+      return;
+    }
+    const link = document.createElement("a");
+    let objectUrl: string | undefined;
+    try {
+      objectUrl = URL.createObjectURL(new Blob([csv], { type: "text/csv;charset=utf-8" }));
+      link.href = objectUrl;
+      link.download = `stay-atlas-saved-stays-${new Date().toISOString().slice(0, 10)}.csv`;
+      link.hidden = true;
+      document.body.appendChild(link);
+      link.click();
+      notify(`CSV download started for ${exportCount} saved ${exportCount === 1 ? "stay" : "stays"}.`);
+    } catch {
+      notify("We couldn’t start the download. Please try again.");
+    } finally {
+      link.remove();
+      // Allow the browser to consume the file before releasing its temporary URL.
+      if (objectUrl) setTimeout(() => URL.revokeObjectURL(objectUrl!), 30_000);
     }
   }
   async function shareHotel(hotel: Hotel) {
@@ -481,13 +508,31 @@ function App() {
                 ))}
               </div>
             )}
-            <div className="collection-explainer">
+            {filters.wishlist ? (
+              <div className="saved-export">
+                <p id="saved-export-scope">
+                  {exportCount
+                    ? `All ${exportCount} saved ${exportCount === 1 ? "stay" : "stays"} in this browser, including those hidden by filters.`
+                    : "Save a stay to export your list."}
+                </p>
+                <button
+                  type="button"
+                  className="export-csv"
+                  onClick={exportSavedStays}
+                  disabled={!exportCount}
+                  aria-label={`Export all ${exportCount} saved ${exportCount === 1 ? "stay" : "stays"} as CSV`}
+                  aria-describedby="saved-export-scope"
+                >
+                  <Download size={14} aria-hidden="true" /> Export CSV
+                </button>
+              </div>
+            ) : <div className="collection-explainer">
               {hotels.length} curated properties ·{" "}
               {hotels.filter((h) => h.group === "Hilton").length} Hilton +{" "}
               {hotels.filter((h) => h.group === "Marriott").length} Marriott.
               <br />
               Not a full directory. Numbered dots group nearby stays.
-            </div>
+            </div>}
             <div className="result-heading" aria-live="polite">
               <span>
                 {results.length.toString().padStart(2, "0")}{" "}

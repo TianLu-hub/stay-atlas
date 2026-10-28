@@ -2426,6 +2426,54 @@ img[src*="desert"] {
   color: #788587;
   padding: 0 24px 12px;
 }
+.saved-export {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 24px 12px;
+  flex-shrink: 0;
+}
+.saved-export p {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  color: #627479;
+  font-size: 10px;
+  line-height: 1.55;
+}
+.export-csv {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  flex-shrink: 0;
+  min-height: 44px;
+  padding: 0 12px;
+  border: 1px solid #c4ceca;
+  border-radius: 6px;
+  background: #eef1eb;
+  color: #264650;
+  font-size: 10px;
+  font-weight: 600;
+}
+.export-csv:hover:not(:disabled) {
+  background: #e0e8e0;
+  border-color: #9eb4ab;
+}
+@media (max-width: 759px) and (max-height: 680px) {
+  /* Keep the saved list usable when the export row shares a short screen. */
+  .flat-atlas .discovery:has(.saved-export) {
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+  .discovery:has(.saved-export) > * {
+    flex-shrink: 0;
+  }
+  .discovery:has(.saved-export) .hotel-list {
+    flex: 0 0 auto;
+    overflow: visible;
+  }
+}
 .orbital-coordinate .collection-open svg {
   opacity: 0.7;
 }
@@ -2434,7 +2482,7 @@ img[src*="desert"] {
     font-size: 8px !important;
     letter-spacing: 1.2px !important;
   }
-  .collection-explainer {
+  .collection-explainer, .saved-export {
     padding: 0 20px 12px;
   }
 }
