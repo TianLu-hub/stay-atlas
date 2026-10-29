@@ -2460,6 +2460,22 @@ img[src*="desert"] {
   background: #e0e8e0;
   border-color: #9eb4ab;
 }
+/* Keep the saved-stay explanation and recovery action reachable even when
+   filters leave too little room for the list on a short desktop or phone. */
+.flat-atlas .discovery:has(.saved-export):has(.empty) {
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.discovery:has(.saved-export):has(.empty) > * {
+  flex-shrink: 0;
+}
+.discovery:has(.saved-export):has(.empty) .hotel-list {
+  flex: 1 0 auto;
+  overflow: visible;
+}
+.discovery:has(.saved-export) .empty button {
+  min-height: 44px;
+}
 @media (max-width: 759px) and (max-height: 680px) {
   /* Keep the saved list usable when the export row shares a short screen. */
   .flat-atlas .discovery:has(.saved-export) {

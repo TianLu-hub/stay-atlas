@@ -59,6 +59,7 @@ function App() {
     sharedLinkHandled = useRef(false),
     selectedId = useRef(selected?.id),
     manualLink = useRef<HTMLInputElement>(null),
+    resultHeading = useRef<HTMLDivElement>(null),
     dragY = useRef(0),
     modal = useRef<HTMLDialogElement>(null),
     toastTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
@@ -230,6 +231,18 @@ function App() {
   function clear() {
     clearArea();
     update({ ...initialFilters, wishlist: filters.wishlist });
+  }
+  function recoverEmptyResults() {
+    if (filters.wishlist) {
+      clearArea();
+      // Keep existing saves in view; only a genuinely empty collection exits My stays.
+      update({ ...initialFilters, wishlist: exportCount > 0 });
+      setHovered(null);
+    } else if (area) clearArea();
+    else clear();
+    // The recovery button unmounts. Keep keyboard focus in the results without
+    // opening the on-screen keyboard by focusing the search field.
+    requestAnimationFrame(() => resultHeading.current?.focus());
   }
   function surprise() {
     if (!results.length) {
@@ -533,7 +546,7 @@ function App() {
               <br />
               Not a full directory. Numbered dots group nearby stays.
             </div>}
-            <div className="result-heading" aria-live="polite">
+            <div className="result-heading" aria-live="polite" tabIndex={-1} ref={resultHeading}>
               <span>
                 {results.length.toString().padStart(2, "0")}{" "}
                 {filters.wishlist ? "saved" : "remarkable"} stays
@@ -565,23 +578,23 @@ function App() {
                 <div className="empty">
                   <Compass size={34} />
                   <h2>
-                    {area ? "A little further afield?" : filters.wishlist
-                      ? "Your atlas begins here."
+                    {filters.wishlist
+                      ? exportCount ? "Your saved stays are still here." : "Your atlas begins here."
                       : "A little further afield?"}
                   </h2>
                   <p>
-                    {area ? "No stays match this area and your filters. Try another part of the map or show all areas." : filters.wishlist
-                      ? "Save a hotel that speaks to you. You’ll find it here, ready for someday."
-                      : "No stays match this combination. Clear a filter and let the world open up."}
+                    {filters.wishlist
+                      ? exportCount
+                        ? "Your current filters or map area hide every saved stay. Clear them to see your full list."
+                        : "Save a hotel that speaks to you. You’ll find it here, ready for someday."
+                      : area
+                        ? "No stays match this area and your filters. Try another part of the map or show all areas."
+                        : "No stays match this combination. Clear a filter and let the world open up."}
                   </p>
-                  <button
-                    onClick={() =>
-                      area ? clearArea() : filters.wishlist ? update({ ...initialFilters }) : clear()
-                    }
-                  >
-                    {area ? "Show all areas" : filters.wishlist
-                      ? "Explore the collection"
-                      : "Reset filters"}{" "}
+                  <button onClick={recoverEmptyResults}>
+                    {filters.wishlist
+                      ? exportCount ? "Show all saved stays" : "Explore the collection"
+                      : area ? "Show all areas" : "Reset filters"}{" "}
                     <ArrowRight size={15} />
                   </button>
                 </div>
