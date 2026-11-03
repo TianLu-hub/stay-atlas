@@ -18,6 +18,7 @@ import {
   Shuffle,
   SlidersHorizontal,
   Sparkles,
+  Undo2,
   X,
 } from "lucide-react";
 import { MapCanvas, type MapHandle } from "./MapCanvas";
@@ -29,18 +30,19 @@ import {
   readSaved,
   type Hotel,
   type Filters,
-  type Saved,
   type Status,
 } from "./model";
 import { filterByMapArea, type MapArea } from "./mapArea";
 import { hotelShareUrl, sharedHotelId } from "./hotelLink";
 import { savedStayHotels, savedStaysCsv } from "./savedStaysCsv";
+import { changeSaved, restoreSaved, expireSavedUndo, persistSaved, type SavedState } from "./savedStaysUndo";
 import "./style.css";
 function App() {
   const [hotels, setHotels] = useState<Hotel[]>([]),
     [error, setError] = useState(false),
     [filters, setFilters] = useState<Filters>(initialFilters),
-    [saved, setSaved] = useState<Saved>(readSaved),
+    [savedState, setSavedState] = useState<SavedState>(() => ({ saved: readSaved(), undo: null, revision: 0 })),
+    [removalStorageFailed, setRemovalStorageFailed] = useState(false),
     [selected, setSelected] = useState<Hotel | null>(null),
     [viewport, setViewport] = useState<MapArea | null>(null),
     [area, setArea] = useState<MapArea | null>(null),
@@ -60,9 +62,15 @@ function App() {
     selectedId = useRef(selected?.id),
     manualLink = useRef<HTMLInputElement>(null),
     resultHeading = useRef<HTMLDivElement>(null),
+    savedStateRef = useRef(savedState),
+    noticeRef = useRef<HTMLDivElement>(null),
+    undoOrigin = useRef<HTMLElement | null>(null),
+    undoTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined),
+    undoClock = useRef<{ token: number; remaining: number; startedAt: number; paused: boolean } | null>(null),
     dragY = useRef(0),
     modal = useRef<HTMLDialogElement>(null),
     toastTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
+  const { saved, undo } = savedState;
   selectedId.current = selected?.id;
   useEffect(() => {
     fetch("/data/hotels.json")
@@ -127,6 +135,27 @@ function App() {
         document.querySelector<HTMLInputElement>(".search-wrap input")?.focus(),
       );
   }, [drawer]);
+  useEffect(() => {
+    clearTimeout(undoTimer.current);
+    undoClock.current = undo
+      ? { token: undo.token, remaining: 10_000, startedAt: performance.now(), paused: false }
+      : null;
+    if (undo) {
+      startUndoTimer();
+      // A second removal may replace Undo while its region is already hovered.
+      if (noticeRef.current?.matches(":hover") || noticeRef.current?.contains(document.activeElement)) pauseUndo();
+    }
+    return () => clearTimeout(undoTimer.current);
+  }, [undo?.token]);
+  useEffect(() => {
+    // Moving a notice into/out of a native modal must not strand a paused timer.
+    const frame = requestAnimationFrame(resumeUndo);
+    return () => cancelAnimationFrame(frame);
+  }, [dialog]);
+  useEffect(() => () => {
+    clearTimeout(toastTimer.current);
+    clearTimeout(undoTimer.current);
+  }, []);
   const matchingHotels = useMemo(
     () => filterHotels(hotels, filters, saved),
     [hotels, filters, saved],
@@ -162,22 +191,84 @@ function App() {
     clearTimeout(toastTimer.current);
     toastTimer.current = setTimeout(() => setToast(""), 2800);
   }
+  function applySaved(next: SavedState) {
+    savedStateRef.current = next;
+    setSavedState(next);
+  }
+  function writeSaved(next: SavedState) {
+    applySaved(next);
+    const persisted = persistSaved(next.saved, value => localStorage.setItem("stay-atlas:v1", value));
+    return persisted;
+  }
+  function startUndoTimer() {
+    const clock = undoClock.current;
+    if (!clock || clock.paused) return;
+    clearTimeout(undoTimer.current);
+    clock.startedAt = performance.now();
+    undoTimer.current = setTimeout(() => {
+      applySaved(expireSavedUndo(savedStateRef.current, clock.token));
+    }, clock.remaining);
+  }
+  function pauseUndo() {
+    const clock = undoClock.current;
+    if (!clock || clock.paused) return;
+    clearTimeout(undoTimer.current);
+    clock.remaining = Math.max(0, clock.remaining - (performance.now() - clock.startedAt));
+    if (!clock.remaining) {
+      undoClock.current = null;
+      applySaved(expireSavedUndo(savedStateRef.current, clock.token));
+      return;
+    }
+    clock.paused = true;
+  }
+  function resumeUndo() {
+    const clock = undoClock.current;
+    if (!clock?.paused || noticeRef.current?.matches(":hover") || noticeRef.current?.contains(document.activeElement)) return;
+    clock.paused = false;
+    startUndoTimer();
+  }
+  function undoRemoval() {
+    const pending = savedStateRef.current.undo;
+    const clock = undoClock.current;
+    if (!pending) return;
+    if (clock?.token === pending.token && !clock.paused && performance.now() - clock.startedAt >= clock.remaining) {
+      applySaved(expireSavedUndo(savedStateRef.current, pending.token));
+      return;
+    }
+    const next = restoreSaved(savedStateRef.current, pending.token);
+    if (next === savedStateRef.current) return;
+    const persisted = writeSaved(next);
+    notify(persisted ? "Restored to your stays." : "Restored for this visit. Browser storage is unavailable.");
+    requestAnimationFrame(() => {
+      const fallback = dialog
+        ? modal.current?.querySelector<HTMLElement>(".save-options button") || modal.current?.querySelector<HTMLElement>(".modal-close")
+        : drawer ? resultHeading.current : document.querySelector<HTMLElement>(".preview-actions .secondary") || document.querySelector<HTMLElement>(".orbital-search");
+      const origin = undoOrigin.current;
+      const inActiveScope = origin?.isConnected && (dialog ? modal.current?.contains(origin) : !origin.closest("dialog"));
+      (inActiveScope ? origin : fallback)?.focus();
+    });
+  }
   function save(h: Hotel, status: Status | null) {
-    const next = { ...saved };
-    if (status) next[h.id] = status;
-    else delete next[h.id];
-    setSaved(next);
-    try {
-      localStorage.setItem("stay-atlas:v1", JSON.stringify(next));
-      notify(
-        status === "want"
-          ? "A little dream, saved."
-          : status === "stayed"
-            ? "Another place in your story."
-            : "Removed from your stays.",
-      );
-    } catch {
-      notify("Saved for this visit. Browser storage is unavailable.");
+    const next = changeSaved(savedStateRef.current, h, status);
+    if (next === savedStateRef.current) return;
+    const persisted = writeSaved(next);
+    if (status === null) {
+      setRemovalStorageFailed(!persisted);
+      clearTimeout(toastTimer.current);
+      setToast("");
+      const origin = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+      undoOrigin.current = origin;
+      // Removed cards and the detail Remove button disappear. Preserve a useful
+      // keyboard position instead of leaving focus on the document body.
+      requestAnimationFrame(() => {
+        if (origin && !origin.isConnected) noticeRef.current?.querySelector<HTMLButtonElement>("button")?.focus();
+      });
+    } else {
+      // A successful write persists the entire current collection, including
+      // a pending removal that was previously only held in memory.
+      if (persisted) setRemovalStorageFailed(false);
+      notify(!persisted ? "Saved for this visit. Browser storage is unavailable."
+        : status === "want" ? "A little dream, saved." : "Another place in your story.");
     }
   }
   function exportSavedStays() {
@@ -263,6 +354,23 @@ function App() {
     filters.tag !== "All" ||
     !!filters.query ||
     !!filters.journey;
+  const notice = (
+    <div
+      ref={noticeRef}
+      className={"toast " + (undo || toast ? "visible " : "") + (undo ? "has-undo" : "")}
+      onMouseEnter={pauseUndo}
+      onMouseLeave={resumeUndo}
+      onFocus={pauseUndo}
+      onBlur={() => requestAnimationFrame(resumeUndo)}
+    >
+      <Check size={16} aria-hidden="true" />
+      <span className="toast-message" role="status" aria-live="polite" aria-atomic="true">
+        {undo ? `${undo.hotelName} removed.${removalStorageFailed ? " Only for this visit; browser storage is unavailable." : ""}` : toast}
+        {undo && toast && <span className="toast-extra">{toast}</span>}
+      </span>
+      {undo && <button type="button" aria-label={`Undo removing ${undo.hotelName}`} onClick={undoRemoval}><Undo2 size={14} aria-hidden="true" /> Undo</button>}
+    </div>
+  );
   return (
     <div
       className={
@@ -863,6 +971,7 @@ function App() {
         >
           <X size={20} />
         </button>
+        {dialog && notice}
         {dialog === "detail" && selected && (
           <div className="detail">
             <div className="detail-photo">
@@ -1047,10 +1156,7 @@ function App() {
           </div>
         )}
       </dialog>
-      <div className={"toast " + (toast ? "visible" : "")} role="status">
-        <Check size={16} />
-        {toast}
-      </div>
+      {!dialog && notice}
     </div>
   );
 }
