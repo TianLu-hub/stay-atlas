@@ -35,12 +35,14 @@ import {
 import { filterByMapArea, type MapArea } from "./mapArea";
 import { hotelShareUrl, sharedHotelId } from "./hotelLink";
 import { savedStayHotels, savedStaysCsv } from "./savedStaysCsv";
+import { sortSavedStays, type SavedStaysSort } from "./savedStaysSort";
 import { changeSaved, restoreSaved, expireSavedUndo, persistSaved, type SavedState } from "./savedStaysUndo";
 import "./style.css";
 function App() {
   const [hotels, setHotels] = useState<Hotel[]>([]),
     [error, setError] = useState(false),
     [filters, setFilters] = useState<Filters>(initialFilters),
+    [savedSort, setSavedSort] = useState<SavedStaysSort>("collection"),
     [savedState, setSavedState] = useState<SavedState>(() => ({ saved: readSaved(), undo: null, revision: 0 })),
     [removalStorageFailed, setRemovalStorageFailed] = useState(false),
     [selected, setSelected] = useState<Hotel | null>(null),
@@ -161,6 +163,11 @@ function App() {
     [hotels, filters, saved],
   );
   const results = useMemo(() => filterByMapArea(matchingHotels, area), [matchingHotels, area]);
+  // Sorting is presentation-only: the map, navigation and CSV keep collection order.
+  const listResults = useMemo(
+    () => filters.wishlist ? sortSavedStays(results, savedSort) : results,
+    [results, filters.wishlist, savedSort],
+  );
   const exportCount = useMemo(() => savedStayHotels(hotels, saved).length, [hotels, saved]);
   const visibleCount = useMemo(() => filterByMapArea(matchingHotels, viewport).length, [matchingHotels, viewport]);
   const areaChanged = viewport && (!area ||
@@ -654,16 +661,28 @@ function App() {
               <br />
               Not a full directory. Numbered dots group nearby stays.
             </div>}
-            <div className="result-heading" aria-live="polite" tabIndex={-1} ref={resultHeading}>
+            <div className={"result-heading" + (filters.wishlist ? " has-saved-sort" : "")} aria-live="polite" tabIndex={-1} ref={resultHeading}>
               <span>
                 {results.length.toString().padStart(2, "0")}{" "}
                 {filters.wishlist ? "saved" : "remarkable"} stays
               </span>
-              <span>
+              {filters.wishlist ? (
+                <label className="saved-sort">
+                  Sort
+                  <select
+                    aria-label="Sort saved stays"
+                    value={savedSort}
+                    onChange={(event) => setSavedSort(event.target.value as SavedStaysSort)}
+                  >
+                    <option value="collection">Collection order</option>
+                    <option value="country">Country</option>
+                  </select>
+                </label>
+              ) : <span>
                 {activeFilters
                   ? "Your selection"
                   : "Handpicked, not exhaustive"}
-              </span>
+              </span>}
             </div>
             <button
               className="mobile-explore"
@@ -707,7 +726,7 @@ function App() {
                   </button>
                 </div>
               )}
-              {results.map((h, i) => (
+              {listResults.map((h, i) => (
                 <article
                   className={
                     "hotel-card " + (selected?.id === h.id ? "selected" : "")
