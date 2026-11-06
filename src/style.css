@@ -2542,8 +2542,10 @@ img[src*="desert"] {
 .discovery:has(.saved-export) .empty button {
   min-height: 44px;
 }
-@media (max-width: 759px) and (max-height: 680px) {
-  /* Keep the saved list usable when the export row shares a short screen. */
+@media (max-width: 759px) and (max-height: 680px),
+  (min-width: 760px) and (max-height: 780px) {
+  /* On short screens, scroll the saved drawer as one surface so its controls
+     cannot compress the cards into a narrow, separately scrolling strip. */
   .flat-atlas .discovery:has(.saved-export) {
     overflow-y: auto;
     overscroll-behavior: contain;
@@ -2554,6 +2556,12 @@ img[src*="desert"] {
   .discovery:has(.saved-export) .hotel-list {
     flex: 0 0 auto;
     overflow: visible;
+  }
+}
+@media (min-width: 760px) and (max-height: 780px) {
+  .flat-atlas .discovery:has(.saved-export) {
+    /* Leave room for keyboard focus outlines at the rounded panel edges. */
+    scroll-padding-block: 12px;
   }
 }
 .orbital-coordinate .collection-open svg {
