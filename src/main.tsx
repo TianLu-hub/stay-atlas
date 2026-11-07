@@ -168,6 +168,7 @@ function App() {
     () => filters.wishlist ? sortSavedStays(results, savedSort) : results,
     [results, filters.wishlist, savedSort],
   );
+  const savedCount = Object.keys(saved).length;
   const exportCount = useMemo(() => savedStayHotels(hotels, saved).length, [hotels, saved]);
   const visibleCount = useMemo(() => filterByMapArea(matchingHotels, viewport).length, [matchingHotels, viewport]);
   const areaChanged = viewport && (!area ||
@@ -421,16 +422,18 @@ function App() {
         </button>
         <button
           className={"wishlist-nav " + (filters.wishlist ? "active" : "")}
+          aria-label={`My stays, ${savedCount} saved ${savedCount === 1 ? "stay" : "stays"}`}
+          aria-pressed={filters.wishlist}
           onClick={() => {
             update({ wishlist: !filters.wishlist, status: "All" });
             setExpanded(true);
             setDrawer(true);
           }}
         >
-          <Bookmark size={17} />
+          <Bookmark size={17} aria-hidden="true" />
           <span>My stays</span>
           <span className="saved-count">
-            {Object.keys(saved).length.toString().padStart(2, "0")}
+            {savedCount.toString().padStart(2, "0")}
           </span>
         </button>
       </header>
