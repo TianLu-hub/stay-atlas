@@ -124,8 +124,14 @@ function App() {
         setExpanded(true);
       }
       if (e.key === "Escape" && !dialog) {
+        const focusWasInDiscovery = !!document.activeElement?.closest(".discovery");
         setDrawer(false);
         setSelected(null);
+        if (focusWasInDiscovery) {
+          document
+            .querySelector<HTMLButtonElement>(".orbital-search")
+            ?.focus({ preventScroll: true });
+        }
       }
     };
     window.addEventListener("keydown", handler);
