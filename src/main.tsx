@@ -34,6 +34,7 @@ import {
 } from "./model";
 import { filterByMapArea, type MapArea } from "./mapArea";
 import { hotelShareUrl, sharedHotelId } from "./hotelLink";
+import { createHotelLoader } from "./hotelLoader";
 import { savedStayHotels, savedStaysCsv } from "./savedStaysCsv";
 import { sortSavedStays, type SavedStaysSort } from "./savedStaysSort";
 import { changeSaved, restoreSaved, expireSavedUndo, persistSaved, type SavedState } from "./savedStaysUndo";
@@ -41,6 +42,7 @@ import "./style.css";
 function App() {
   const [hotels, setHotels] = useState<Hotel[]>([]),
     [error, setError] = useState(false),
+    [loading, setLoading] = useState(true),
     [filters, setFilters] = useState<Filters>(initialFilters),
     [savedSort, setSavedSort] = useState<SavedStaysSort>("collection"),
     [savedState, setSavedState] = useState<SavedState>(() => ({ saved: readSaved(), undo: null, revision: 0 })),
@@ -59,6 +61,8 @@ function App() {
     [sharedLinkReady, setSharedLinkReady] = useState(false),
     [copyState, setCopyState] = useState<"idle" | "copying" | "copied" | "manual">("idle");
   const map = useRef<MapHandle>(null),
+    hotelLoader = useRef(createHotelLoader()),
+    retryButton = useRef<HTMLButtonElement>(null),
     requestedHotelId = useRef(sharedHotelId(location.search)),
     sharedLinkHandled = useRef(false),
     selectedId = useRef(selected?.id),
@@ -74,14 +78,28 @@ function App() {
     toastTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
   const { saved, undo } = savedState;
   selectedId.current = selected?.id;
+  async function loadHotels() {
+    const request = hotelLoader.current.load();
+    if (!request) return;
+    setLoading(true);
+    const result = await request;
+    if (result.status === "cancelled") return;
+    setLoading(false);
+    if (result.status === "failed") {
+      setError(true);
+      return;
+    }
+    const restoreFocus = !!retryButton.current && document.activeElement === retryButton.current;
+    setHotels(result.hotels);
+    setError(false);
+    if (restoreFocus) requestAnimationFrame(() => {
+      // The button disappears on success. Never take focus from another control.
+      if (document.activeElement === document.body) resultHeading.current?.focus({ preventScroll: false });
+    });
+  }
   useEffect(() => {
-    fetch("/data/hotels.json")
-      .then((r) => {
-        if (!r.ok) throw Error();
-        return r.json();
-      })
-      .then(setHotels)
-      .catch(() => setError(true));
+    void loadHotels();
+    return () => hotelLoader.current.cancel();
   }, []);
   useEffect(() => {
     if (!hotels.length || sharedLinkHandled.current) return;
@@ -700,14 +718,16 @@ function App() {
               Explore {results.length} stays <ArrowDown size={13} />
             </button>
             <div className="hotel-list">
-              {!hotels.length && !error && (
-                <p className="loading">Unfolding the collection…</p>
+              {loading && !error && (
+                <p className="loading" role="status">Unfolding the collection…</p>
               )}
               {error && (
                 <div className="empty">
                   <h2>Our collection took a detour.</h2>
-                  <p>Reload to try again.</p>
-                  <button onClick={() => location.reload()}>Reload</button>
+                  <p role="status">{loading ? "Trying the collection again…" : "Try again without losing your place."}</p>
+                  <button ref={retryButton} aria-disabled={loading} onClick={() => void loadHotels()}>
+                    {loading ? "Retrying…" : "Retry"}
+                  </button>
                 </div>
               )}
               {!!hotels.length && !results.length && (
