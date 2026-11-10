@@ -666,7 +666,11 @@ function App() {
             {filters.wishlist ? (
               <div className="saved-export">
                 <p id="saved-export-scope">
-                  {exportCount
+                  {loading
+                    ? "Waiting for hotel details before export."
+                    : error
+                    ? "Hotel details are unavailable. Retry below before exporting."
+                    : exportCount
                     ? `All ${exportCount} saved ${exportCount === 1 ? "stay" : "stays"} in this browser, including those hidden by filters.`
                     : "Save a stay to export your list."}
                 </p>
@@ -674,8 +678,10 @@ function App() {
                   type="button"
                   className="export-csv"
                   onClick={exportSavedStays}
-                  disabled={!exportCount}
-                  aria-label={`Export all ${exportCount} saved ${exportCount === 1 ? "stay" : "stays"} as CSV`}
+                  disabled={loading || error || !exportCount}
+                  aria-label={loading || error
+                    ? "Export saved stays as CSV"
+                    : `Export all ${exportCount} saved ${exportCount === 1 ? "stay" : "stays"} as CSV`}
                   aria-describedby="saved-export-scope"
                 >
                   <Download size={14} aria-hidden="true" /> Export CSV
