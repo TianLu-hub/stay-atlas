@@ -1223,20 +1223,57 @@ function HotelImage({
   compact?: boolean;
   index?: number;
 }) {
-  const [failed, setFailed] = useState(false);
   const photo = photoFor(h);
-  useEffect(() => setFailed(false), [h.id]);
+  return (
+    <HotelImageContent
+      key={h.id + ":" + (photo?.file ?? "illustration")}
+      h={h}
+      photo={photo}
+      compact={compact}
+      index={index}
+    />
+  );
+}
+function HotelImageContent({ h, photo, compact, index }: {
+  h: Hotel;
+  photo: ReturnType<typeof photoFor>;
+  compact: boolean;
+  index: number;
+}) {
+  const [state, setState] = useState<"loading" | "loaded" | "failed">("loading");
+  const image = useRef<HTMLImageElement>(null);
+  const loaded = state === "loaded";
+  // A cached image may already be complete before React observes its load event.
+  useEffect(() => {
+    if (image.current?.complete) {
+      setState(image.current.naturalWidth > 0 ? "loaded" : "failed");
+    }
+  }, []);
   return (
     <div
       className={
         "hotel-image " +
-        (photo && !failed ? "has-photo" : "illustration") +
+        (loaded ? "has-photo" : "photo-pending") +
         " " +
         h.group.toLowerCase()
       }
     >
-      {photo && !failed ? (
+      <div className={"image-placeholder illustration " + h.group.toLowerCase()} aria-hidden={loaded}>
+        <div className="postcard-grid" />
+        <Compass
+          className="postcard-compass"
+          size={compact ? 58 : 88}
+          strokeWidth={0.5}
+        />
+        <span className="postcard-city">{h.city}</span>
+        <span className="postcard-coordinates">
+          {Math.abs(h.lat).toFixed(2)}° {h.lat >= 0 ? "N" : "S"} &nbsp;{" "}
+          {Math.abs(h.lng).toFixed(2)}° {h.lng >= 0 ? "E" : "W"}
+        </span>
+      </div>
+      {photo && state !== "failed" && (
         <img
+          ref={image}
           src={"/images/" + photo.file + "-960.webp"}
           srcSet={[480, 960, 1600]
             .map((w) => "/images/" + photo.file + "-" + w + ".webp " + w + "w")
@@ -1247,26 +1284,14 @@ function HotelImage({
               : "(max-width: 759px) 90vw, 800px"
           }
           alt={photo.label + "; not a photograph of the hotel"}
+          aria-hidden={!loaded}
           loading={compact && index > 2 ? "lazy" : "eager"}
-          onError={() => setFailed(true)}
+          onLoad={(event) => setState(event.currentTarget.naturalWidth > 0 ? "loaded" : "failed")}
+          onError={() => setState("failed")}
         />
-      ) : (
-        <>
-          <div className="postcard-grid" />
-          <Compass
-            className="postcard-compass"
-            size={compact ? 58 : 88}
-            strokeWidth={0.5}
-          />
-          <span className="postcard-city">{h.city}</span>
-          <span className="postcard-coordinates">
-            {Math.abs(h.lat).toFixed(2)}° {h.lat >= 0 ? "N" : "S"} &nbsp;{" "}
-            {Math.abs(h.lng).toFixed(2)}° {h.lng >= 0 ? "E" : "W"}
-          </span>
-        </>
       )}
       <span className="image-caption">
-        {photo && !failed
+        {photo && loaded
           ? photo.label
           : "Location illustration · not a property photograph"}
       </span>

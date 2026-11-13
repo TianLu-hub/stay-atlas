@@ -113,6 +113,7 @@ tests/            数据和筛选测试
 ## 素材与使用说明
 
 - 酒店图片为已标注的**目的地照片**，不代表酒店实拍；没有照片的条目使用地点插画。
+- 照片加载期间先显示该地点的插画，成功后柔和淡入；加载失败时保留插画。切换酒店会重建图片加载状态，避免旧请求影响新地点；已缓存照片也可正常显示。遵循系统的减少动态效果设置，不播放淡入或持续加载动画。
 - 图片来源与许可证见 [`image-credits.json`](public/data/image-credits.json)。
 - 字体许可证保存在 [`public/fonts/`](public/fonts/)。
 - 地图来源：[OpenFreeMap](https://openfreemap.org/)、[OpenStreetMap](https://www.openstreetmap.org/copyright)、[Natural Earth](https://www.naturalearthdata.com/about/terms-of-use/)。
