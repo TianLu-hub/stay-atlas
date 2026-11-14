@@ -835,8 +835,16 @@ function App() {
             <span className="orbital-signal" />
             <button
               className="collection-open"
-              aria-label={`View all ${hotels.length} curated hotels`}
-              title={`${hotels.length} curated hotels. Numbered dots group nearby hotels; zoom in to discover each stay.`}
+              aria-label={loading
+                ? "Loading stays. Open hotel explorer"
+                : error
+                  ? "Stays unavailable. Open hotel explorer to retry"
+                  : `View all ${hotels.length} curated hotels`}
+              title={loading
+                ? "Hotel details are loading. Open the hotel explorer."
+                : error
+                  ? "Hotel details are unavailable. Open the hotel explorer to retry."
+                  : `${hotels.length} curated hotels. Numbered dots group nearby hotels; zoom in to discover each stay.`}
               onClick={() => {
                 clearArea();
                 update({ ...initialFilters });
@@ -844,7 +852,11 @@ function App() {
                 setExpanded(true);
               }}
             >
-              {hotels.length} CURATED STAYS <ArrowRight size={12} />
+              {loading
+                ? "LOADING STAYS…"
+                : error
+                  ? "STAYS UNAVAILABLE"
+                  : `${hotels.length} CURATED STAYS`} <ArrowRight size={12} />
             </button>
             <button
               aria-label="About Stay Atlas and credits"
