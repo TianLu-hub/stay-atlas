@@ -1104,9 +1104,13 @@ function App() {
                 href={selected.url}
                 target="_blank"
                 rel="noreferrer"
+                aria-describedby="official-link-notice"
               >
-                Visit official hotel website <ExternalLink size={15} />
+                Visit official hotel website <ExternalLink size={15} aria-hidden="true" />
               </a>
+              <p id="official-link-notice" className="official-link-notice">
+                Opens in a new tab
+              </p>
               <div className="source-note">
                 <p>
                   Property information checked {selected.verifiedAt}. An
