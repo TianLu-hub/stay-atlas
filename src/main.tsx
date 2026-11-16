@@ -776,6 +776,7 @@ function App() {
                     className="card-main"
                     onClick={() => select(h)}
                     aria-label={`Discover ${h.name}`}
+                    aria-describedby={filters.wishlist && saved[h.id] ? `saved-status-${h.id}` : undefined}
                   >
                     <HotelImage h={h} compact index={i} />
                     <div className="card-copy">
@@ -790,6 +791,11 @@ function App() {
                         <MapPin size={12} />
                         {h.city}, {h.country}
                       </div>
+                      {filters.wishlist && saved[h.id] && (
+                        <span id={`saved-status-${h.id}`} className="saved-status">
+                          {saved[h.id] === "stayed" ? "Stayed" : "Want to visit"}
+                        </span>
+                      )}
                       <div className="card-footer">
                         <span>{h.tags.slice(0, 2).join(" · ")}</span>
                         <ArrowRight size={16} />
