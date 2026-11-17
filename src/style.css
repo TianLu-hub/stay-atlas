@@ -404,6 +404,7 @@ main {
 }
 .status-tabs {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 24px 12px;
   gap: 5px;
 }

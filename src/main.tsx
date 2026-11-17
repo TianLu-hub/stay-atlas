@@ -193,7 +193,12 @@ function App() {
     [results, filters.wishlist, savedSort],
   );
   const savedCount = Object.keys(saved).length;
-  const exportCount = useMemo(() => savedStayHotels(hotels, saved).length, [hotels, saved]);
+  const validSavedHotels = useMemo(() => savedStayHotels(hotels, saved), [hotels, saved]);
+  const exportCount = validSavedHotels.length;
+  const savedStatusCounts = useMemo(() => ({
+    want: validSavedHotels.filter((h) => saved[h.id] === "want").length,
+    stayed: validSavedHotels.filter((h) => saved[h.id] === "stayed").length,
+  }), [validSavedHotels, saved]);
   const visibleCount = useMemo(() => filterByMapArea(matchingHotels, viewport).length, [matchingHotels, viewport]);
   const areaChanged = viewport && (!area ||
     (Object.keys(viewport) as (keyof MapArea)[]).some(key => Math.abs(viewport[key] - area[key]) > 0.00001));
@@ -648,19 +653,24 @@ function App() {
             )}
             {filters.wishlist && (
               <div className="status-tabs">
-                {[
+                {([
                   ["All", "All saved"],
                   ["want", "Want to visit"],
                   ["stayed", "Stayed"],
-                ].map(([v, l]) => (
-                  <button
-                    className={filters.status === v ? "chosen" : ""}
-                    key={v}
-                    onClick={() => update({ status: v })}
-                  >
-                    {l}
-                  </button>
-                ))}
+                ] as const).map(([v, l]) => {
+                  const count = loading || error || v === "All" ? undefined : savedStatusCounts[v];
+                  return (
+                    <button
+                      className={filters.status === v ? "chosen" : ""}
+                      key={v}
+                      onClick={() => update({ status: v })}
+                      aria-label={count === undefined ? undefined : `${l}, ${count} saved ${count === 1 ? "stay" : "stays"} in total`}
+                      title={count === undefined ? undefined : "Counts include all saved stays in this browser, even those hidden by filters."}
+                    >
+                      {l}{count === undefined ? "" : ` (${count})`}
+                    </button>
+                  );
+                })}
               </div>
             )}
             {filters.wishlist ? (
